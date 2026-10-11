@@ -1,0 +1,22 @@
+{
+  "status": "field_batch_running_no_final_accuracy_claim",
+  "region_specific_training": false,
+  "checkpoint_sha256": "d4584c37ac1ba8ddcce1c817eedb5f88270ddddf88b037640b68c5457cdb87e2",
+  "source_sha256": {
+    "joint-numerical-audit.json": "7405e2a62a28d612232db0b5d57253c8c4565361a6e60c9d80bdc791719398b7",
+    "real_basin_inversion.py": "c1053728cb1b8803e1ce5c0583a1a9fe67c229c92ae43b43a5e7b2d045bea3ba",
+    "inversion-original-source.py": "6156613131c2fb6c3c824855092311709c3cf7cc49418caa8af124941823f14e",
+    "transformer-training-protocol.json": "63941f9ef6cc7a3497e9256f6ea313ee22f82f48358536a8a0a91b24c4e8b214",
+    "finish_real_basin.py": "b45e443c669202bccb539e2fc6354fd9edf51a5de7941dea782e585fbcce55f2",
+    "global-checkpoint-guard-audit.json": "603ca969b40dcc2c7484eeb90b4d83f7378afb940649b598f6eea39c9f3b3db5",
+    "numerical-audit.json": "533a27c927fc6e08cea01f2b144c0375cb7d748c2bb8d60775cc173a9476fe97",
+    "prepare_real_basin.py": "58c22b49d1008ca6bc3f1005eba007b869dd27b0b4ecb714a34c5a55b4130bdc",
+    "run_real_basin.py": "06a27f7f204e040e3a17725756781f45dd23eb3a555f9f3f2bcd74de7950e1d0",
+    "inversion-protocol.json": "9c90310946a574eedcd86822dac42b3ea8714a97c901475fcd45adf5e56ff179",
+    "cohort-protocol.json": "832493c5482f808b5d437ab4600d50642ad5de3ec39ce82c71dd2a4725f5cd93",
+    "implementation-amendments.json": "5a03cc89d0cd2319a9202be1f53d638d14fc6eb70940d2a485b5564e360d62d9",
+    "report_real_basin.py": "5aad94de175b86e080290bd9e03bd6199e535717a69372c00844bb1ccf818f8e"
+  },
+  "runtime_dependencies": "RF experiment scripts and transformer_rf modules in accompanying local/remote experiment. Physical grtm package, torch/numpy/scipy/obspy/matplotlib and pyshp2.3.1. Original LITMOD remains unchanged.",
+  "interpretation": "One synthetic-trained checkpoint for all stations; completed numerical and checkpoint-integrity checks support implementation, not field accuracy. Run report_real_basin.py after batch completion; all pending/unresolved outcomes remain explicit."
+}

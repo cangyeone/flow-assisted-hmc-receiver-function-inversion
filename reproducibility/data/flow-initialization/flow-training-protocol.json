@@ -1,0 +1,169 @@
+{
+  "configuration": {
+    "version": 1,
+    "train": 1000000,
+    "validation": 8192,
+    "test": 8192,
+    "pilot": 8192,
+    "bootstrap": 102400,
+    "shard_size": 4096,
+    "teacher_batch": 64,
+    "min_layers": 2,
+    "max_layers": 16,
+    "width": 96,
+    "depth": 3,
+    "blocks": 8,
+    "std_min": 0.001,
+    "std_max": 0.03,
+    "rf_abs_limit": 8.0,
+    "pilot_epochs": 3,
+    "bootstrap_epochs": 5,
+    "forward_epochs": 40,
+    "inverse_epochs": 40,
+    "batch": 256,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "data_seed": 41001,
+    "forward_seed": 41004,
+    "inverse_seed": 41005,
+    "noise_seed": 41006,
+    "forward_warmup_epochs": 5,
+    "hetero_ramp_epochs": 5
+  },
+  "scientific_protocol": {
+    "configuration": {
+      "version": 1,
+      "train": 1000000,
+      "validation": 8192,
+      "test": 8192,
+      "pilot": 8192,
+      "bootstrap": 102400,
+      "shard_size": 4096,
+      "teacher_batch": 64,
+      "min_layers": 2,
+      "max_layers": 16,
+      "width": 96,
+      "depth": 3,
+      "blocks": 8,
+      "std_min": 0.001,
+      "std_max": 0.03,
+      "rf_abs_limit": 8.0,
+      "pilot_epochs": 3,
+      "bootstrap_epochs": 5,
+      "forward_epochs": 40,
+      "inverse_epochs": 40,
+      "batch": 256,
+      "learning_rate": 0.0003,
+      "weight_decay": 0.0001,
+      "data_seed": 41001,
+      "forward_seed": 41004,
+      "inverse_seed": 41005,
+      "noise_seed": 41006,
+      "forward_warmup_epochs": 5,
+      "hetero_ramp_epochs": 5
+    },
+    "sources": {
+      "models.py": "a8e7c9ae26d70c58dc3c881bc71bfb44dd5770bdc0adf9fe8d96ed5f0eb17972",
+      "run.py": "cd8d9fba30c0ff12cfa7593ddfc2befa5d89e7c4a6bed9751d3e1be921bca3da",
+      "tests.py": "f3e0bf10eec52ae084654513cf2f2d5383c157fe4866513947b76729d337112b",
+      "infer.py": "048d7411fdfa0b51a6f9b7d51db3e41ed0ed1597a3f00a1eae4dcd0efc20745d",
+      "__init__.py": "9a92389884dd722c7b12406b1f5ed390e56e2360d0852c1ff74b3000ef6073f8",
+      "data.py": "447cbf6d4b4277286ca1f7f8231225ca7b22e169f74fb20e7088523cd4655423",
+      "validate.py": "ab04cb2f1e70ee2ff699aa94d6eda90d7e618c876175c82125a44e9eba3362ea",
+      "structure.py": "e37ca61614848ceeef2cc49397f4f41da951400fe8a40e21e75cb530d5ac9f1c"
+    },
+    "forward": "Variable-length layer Transformer encoder and RF patch cross-attention Transformer decoder. Mean and bounded heteroscedastic std; exact zero-lag RF=1/std=0.",
+    "inverse": "RF Transformer encoder, categorical finite-layer count, eight deterministic Transformer-conditioned affine couplings over 5K+1 active coordinates; inactive padding excluded from likelihood and Gaussian base.",
+    "prior": "Uniform finite-layer count 2--16. 80% sediment mixture, 0.05--10 km basin depth, 1--4 sediment cells where count permits; variable crust cells, 35% LVZ when >=3 crust cells. H 13--79 km; density and constant Q nuisance parameters inferred. See sample_prior for exact mixture. Fixed elastic halfspace Vp=8, Vs=4.5, rho=3.3. P shift U(-.29,.29). Accepted physical RF amplitude <=8 defines explicit simulator prior truncation; no benchmark truth involved.",
+    "coordinates": "K thickness, Vs, Vp/Vs, rho, Qs per finite layer + P time shift: 5K+1. Thickness >=.02, H between 12 and 80, Vs .3--4.3, ratio >1.55 and Vp<8.8, rho 1.6--3.2, Qs 10--1000. Density in these physical coordinates requires subtracting decode log Jacobian from u-coordinate log probability.",
+    "rf": {
+      "dt": 0.2,
+      "start": -2.0,
+      "samples": 151,
+      "gaussian_widths": [
+        1.0,
+        2.5,
+        4.0
+      ],
+      "nfft": 1024,
+      "slowness_bins": [
+        [
+          0.039,
+          0.049
+        ],
+        [
+          0.051,
+          0.065
+        ],
+        [
+          0.067,
+          0.082
+        ]
+      ],
+      "ray_sd": [
+        0.0002,
+        0.003
+      ],
+      "quadrature_rays": 3,
+      "normalization": "divide every event ray by its own RF P sample before bin averaging",
+      "channels": "bin-major then Gaussian-width-major"
+    },
+    "noise": "Known base sigma logU(.005,.025) per ray bin. Time-dependent multiplier .6+.4*abs(clean)/(.1+abs(clean)). Marginal covariance .85 RBF(.35 s)+.15 I, conditioned to zero at P. 80% shared band variance, 20% independent band variance. Each clean training RF gets fresh online noise; validation/test noise fixed with disjoint RNG streams. Generated std cap .03 RF units. These noise assumptions require separate real-data validation.",
+    "training": "Forward: 20*clean-MSE+5*first-difference-MSE, then ramp .1*beta-NLL(beta=.5)+.01*supervised log-std-MSE after five mean-only epochs. Inverse: joint count/continuous negative log density on exact physical RF plus augmentation. No forward-emulator RF is used to train the inverse. Gradient clipping 1, finite checks, cosine schedule, float32. No heteroscedastic head can enlarge the specified simulator observation noise.",
+    "split": "Independent SeedSequence(data_seed,split,shard), disjoint source IDs; all noise views stay with source. Shared slowness microbatch clusters recorded. Pilot data are independent training-only; test never selects weights.",
+    "selection": "Full-data forward best clean validation RMSE after heteroscedastic weight reaches one (for runs >10 epochs); inverse best joint validation NLL. Pilot and bootstrap checkpoints have separate directories and do not qualify as final results.",
+    "references": [
+      "https://arxiv.org/abs/1605.08803",
+      "https://arxiv.org/abs/2203.09168"
+    ],
+    "scope": "Amortized posterior approximation under declared synthetic prior, 1D GRTM and specified noise; not calibrated real posterior, arbitrary unseen layer-count accuracy, or demonstrated superiority to HMC.",
+    "runtime": {
+      "device": "cuda:0",
+      "torch": "2.8.0+cu128",
+      "numpy": "2.5.3",
+      "python": "3.13.5",
+      "host": "DESKTOP-2SV89I8",
+      "grtm_sources": {
+        "rf_cuda.py": "e45f40a8c1a1f2205ddc1dcca74845c4d912b462c6c2b91000ae2300a21ebdb0",
+        "_lib/_grtm_rf_cuda.so": "78a85138b43687fbcdafe3e6e842d42600e7e724b62aafcb6257c089c2ce3427"
+      },
+      "gpu": "NVIDIA GeForce RTX 5090"
+    }
+  },
+  "data_reference": {
+    "path": "historical-results/transformer-rf-flow-v1",
+    "protocol_sha256": "8dd62d4b725db9f5ae97778bd19e6508981d9d7880ab50fbf54fe2a0e1f78ccf",
+    "train_manifest_sha256": "d7bb010b653b44fe2455781ce44dda1365b932a6cb61a0cad47c079ff3102db1",
+    "validation_manifest_sha256": "9725b4c6551bba76cf1d821d4976173f65c141edc1704a5b66ade04f1fdcfd3f",
+    "test_manifest_sha256": "238ae5dd952fb4b3868984f84b0d2c413d37169d7f4f3429af2121e73a4759c7",
+    "audit_sha256": "b5f01626eec174c29bdf9d71760fa7d3252b4199e946619624fdf0311a20b6ad"
+  },
+  "initial": {
+    "forward": {
+      "path": "historical-results/transformer-rf-flow-v1/bootstrap/forward/best.pt",
+      "sha256": "c96ef23ff8aa520713d22872c41678b5cf5bc6e74195ce4a115e4970c75ea514"
+    },
+    "inverse": {
+      "path": "historical-results/transformer-rf-flow-v1/bootstrap/inverse/best.pt",
+      "sha256": "8e569051bf66bbb1aeb1c603ce00785f85802774c17ef056263d41fae6eee568"
+    }
+  },
+  "execution": {
+    "engine": "FP32 CUDA graph forward/backward/clipping; ordinary AdamW; scalar step counters on CPU; finite checks before every update",
+    "devices": {
+      "forward": "cuda:0",
+      "inverse": "cuda:1"
+    },
+    "torch": "2.8.0+cu128",
+    "monitor_gpu": true,
+    "gpu": {
+      "cuda:1": "NVIDIA GeForce RTX 5090",
+      "cuda:0": "NVIDIA GeForce RTX 5090"
+    },
+    "sources": {
+      "run_transformer_rf_fast.py": "7b22d7ddea0c2be3ac00b1364aa96ce35dffaa86c959bc712aee52ccf0a46ecd",
+      "transformer_rf_fast.py": "870faedf27bf50637a25f0693057a4d7edcbdd8ec33a2b2b4c4ab0645e68d18f"
+    }
+  },
+  "scope": "Independent accelerated training experiment using referenced, audited physical data. Statistical model/loss/batch/noise unchanged. Short runs are execution checks, not evidence of scientific accuracy."
+}

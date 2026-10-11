@@ -1,0 +1,80 @@
+{
+  "format": 1,
+  "release": "0.1.0",
+  "device": "cpu",
+  "publication_boundary": {
+    "third_party_programs": 0,
+    "solver_source_or_binaries": 0,
+    "accelerator_programs": 0,
+    "exported_provenance_records": 828,
+    "own_python_programs": 62,
+    "production_weights": 4,
+    "experimental_weights": 14
+  },
+  "macos_clean_wheel": {
+    "python": "3.12.14",
+    "torch": "2.14.1",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "private_source_path_required": false,
+    "core_tests": {
+      "passed": 12,
+      "failed": 0
+    },
+    "doctor": "passed",
+    "demo": "passed; short chains remain provisional",
+    "training_smoke_stages": [
+      "generate",
+      "pilot",
+      "bootstrap",
+      "full"
+    ]
+  },
+  "linux_installed_wheel": {
+    "python": "3.13.5",
+    "torch": "2.8.0",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "execution_device": "cpu",
+    "private_source_path_required": false,
+    "core_tests": {
+      "passed": 12,
+      "failed": 0
+    }
+  },
+  "archived_cpu_tests": {
+    "passed": 10,
+    "skipped": 1,
+    "skip_reason": "optional historic generated discriminator dataset unavailable"
+  },
+  "field_figure_rebuild": {
+    "passed": true,
+    "stations": 42,
+    "passed_local_diagnostics": 35,
+    "unresolved": 7,
+    "rf_fit_improve_worsen_unchanged": [
+      26,
+      3,
+      13
+    ]
+  },
+  "new_cpu_benchmark_smoke": {
+    "cases": [
+      "basin",
+      "thin_sediment"
+    ],
+    "initializers": [
+      "sobol",
+      "flow"
+    ],
+    "method": "hmc",
+    "completed_runs": 4,
+    "scientific_status": "all short chains provisional; no accuracy or speed superiority claim"
+  },
+  "global_checkpoint_equivalence": "v1 and v2 have identical trained tensors, differing provenance metadata; not independent runs",
+  "notes": [
+    "This validates release execution and numerical interfaces, not geological accuracy or population coverage.",
+    "External GRTM research/noncommercial license is preserved.",
+    "Archived result/source hashes differ from CPU publication ports where recorded."
+  ]
+}

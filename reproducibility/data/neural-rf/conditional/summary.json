@@ -1,0 +1,520 @@
+{
+  "config": {
+    "truth": [
+      40.0,
+      1.78
+    ],
+    "bounds": [
+      [
+        38.0,
+        1.72
+      ],
+      [
+        42.0,
+        1.84
+      ]
+    ],
+    "fixed_hs": 1.5,
+    "fixed_vs_s": 2.4,
+    "noise": 0.035,
+    "p": [
+      0.044,
+      0.057,
+      0.075
+    ],
+    "seed": 31100,
+    "nodes": [
+      129,
+      257
+    ],
+    "steps": 2200,
+    "burn": 800,
+    "chains": 4,
+    "leapfrog_steps": 8,
+    "prior": "Same uniform bounded prior for physical and neural targets",
+    "initialization": "Same 16 Sobol points; original/guided use physical optimization with identical four-start iteration budgets, initialized by Sobol order / top neural scores. Both sample the exact same Gaussian RF target. Ratio HMC samples a different approximate target.",
+    "significance": "One conditional example, not simulation-based calibration or coverage validation"
+  },
+  "optimizations": {
+    "physical": {
+      "candidates": [
+        {
+          "index": 2,
+          "x": [
+            39.92727893948927,
+            1.783044930167626
+          ],
+          "nll": 204.2457733747329,
+          "success": true,
+          "iterations": 6,
+          "evaluations": 9
+        },
+        {
+          "index": 0,
+          "x": [
+            39.92727894032079,
+            1.7830449301757758
+          ],
+          "nll": 204.24577337473295,
+          "success": true,
+          "iterations": 8,
+          "evaluations": 13
+        },
+        {
+          "index": 3,
+          "x": [
+            39.9272789090289,
+            1.7830449310592207
+          ],
+          "nll": 204.2457733747333,
+          "success": true,
+          "iterations": 11,
+          "evaluations": 13
+        },
+        {
+          "index": 1,
+          "x": [
+            39.927279015557794,
+            1.783044927550462
+          ],
+          "nll": 204.24577337473374,
+          "success": true,
+          "iterations": 10,
+          "evaluations": 14
+        }
+      ],
+      "seconds": 0.3535034170054132,
+      "ranking_seconds": 0.0
+    },
+    "guided": {
+      "candidates": [
+        {
+          "index": 2,
+          "x": [
+            39.92727893948927,
+            1.783044930167626
+          ],
+          "nll": 204.2457733747329,
+          "success": true,
+          "iterations": 6,
+          "evaluations": 9
+        },
+        {
+          "index": 14,
+          "x": [
+            39.92727894023844,
+            1.7830449301944624
+          ],
+          "nll": 204.24577337473295,
+          "success": true,
+          "iterations": 10,
+          "evaluations": 12
+        },
+        {
+          "index": 6,
+          "x": [
+            39.92727893104067,
+            1.7830449303881883
+          ],
+          "nll": 204.24577337473306,
+          "success": true,
+          "iterations": 10,
+          "evaluations": 15
+        },
+        {
+          "index": 10,
+          "x": [
+            39.92727890493517,
+            1.7830449333358556
+          ],
+          "nll": 204.24577337473377,
+          "success": true,
+          "iterations": 6,
+          "evaluations": 8
+        }
+      ],
+      "seconds": 0.31229145798715763,
+      "ranking_seconds": 0.002030124989687465
+    }
+  },
+  "references": {
+    "physical": [
+      {
+        "nodes": 129,
+        "mean": [
+          39.9279692730383,
+          1.7830144609723584
+        ],
+        "sd": [
+          0.07601209449330462,
+          0.0037575808921877455
+        ],
+        "seconds": 34.74765808400116,
+        "edge_mass": 8.88592671901621e-50
+      },
+      {
+        "nodes": 257,
+        "mean": [
+          39.92796927303841,
+          1.783014460972354
+        ],
+        "sd": [
+          0.07601209449330398,
+          0.0037575808921877416
+        ],
+        "seconds": 131.97369537499617,
+        "edge_mass": 4.442963227413353e-50
+      }
+    ],
+    "neural": [
+      {
+        "nodes": 129,
+        "mean": [
+          40.53284856878515,
+          1.7690680395281002
+        ],
+        "sd": [
+          1.0143558861725137,
+          0.03042399208323777
+        ],
+        "seconds": 1.2035229159955634,
+        "edge_mass": 0.01295490121766433
+      },
+      {
+        "nodes": 257,
+        "mean": [
+          40.53282062184124,
+          1.7690689990274795
+        ],
+        "sd": [
+          1.0143172886482044,
+          0.03042337883978061
+        ],
+        "seconds": 4.774463415989885,
+        "edge_mass": 0.006477384151178464
+      }
+    ]
+  },
+  "results": [
+    {
+      "method": "physical",
+      "target": "exact same Gaussian RF posterior",
+      "sampling_seconds": 342.2138195830048,
+      "optimization": {
+        "candidates": [
+          {
+            "index": 2,
+            "x": [
+              39.92727893948927,
+              1.783044930167626
+            ],
+            "nll": 204.2457733747329,
+            "success": true,
+            "iterations": 6,
+            "evaluations": 9
+          },
+          {
+            "index": 0,
+            "x": [
+              39.92727894032079,
+              1.7830449301757758
+            ],
+            "nll": 204.24577337473295,
+            "success": true,
+            "iterations": 8,
+            "evaluations": 13
+          },
+          {
+            "index": 3,
+            "x": [
+              39.9272789090289,
+              1.7830449310592207
+            ],
+            "nll": 204.2457733747333,
+            "success": true,
+            "iterations": 11,
+            "evaluations": 13
+          },
+          {
+            "index": 1,
+            "x": [
+              39.927279015557794,
+              1.783044927550462
+            ],
+            "nll": 204.24577337473374,
+            "success": true,
+            "iterations": 10,
+            "evaluations": 14
+          }
+        ],
+        "seconds": 0.3535034170054132,
+        "ranking_seconds": 0.0
+      },
+      "diagnostics": {
+        "rhat": [
+          1.0007614346963123,
+          1.0010946718293368
+        ],
+        "ess_bulk": [
+          5325.773872337184,
+          5127.521912137971
+        ],
+        "ess_tail": [
+          3132.01569325576,
+          2856.058648008998
+        ],
+        "converged": true,
+        "method": "rank-normalized/folded split R-hat; bulk and 5%/95% tail ESS"
+      },
+      "mean": [
+        39.926518720144536,
+        1.7830818832035664
+      ],
+      "sd": [
+        0.0753619573588659,
+        0.0037654475330442965
+      ],
+      "truth_error": [
+        -0.07348127985546427,
+        0.0030818832035663934
+      ],
+      "mean_error_in_own_reference_sd": [
+        -0.019083185426486116,
+        0.017942988626712605
+      ],
+      "acceptance": [
+        0.9678571428571429,
+        0.9585714285714285,
+        0.9478571428571428,
+        0.9628571428571429
+      ],
+      "production_divergences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "gradient_evaluations": 17523
+    },
+    {
+      "method": "guided",
+      "target": "exact same Gaussian RF posterior",
+      "sampling_seconds": 350.1848627500003,
+      "optimization": {
+        "candidates": [
+          {
+            "index": 2,
+            "x": [
+              39.92727893948927,
+              1.783044930167626
+            ],
+            "nll": 204.2457733747329,
+            "success": true,
+            "iterations": 6,
+            "evaluations": 9
+          },
+          {
+            "index": 14,
+            "x": [
+              39.92727894023844,
+              1.7830449301944624
+            ],
+            "nll": 204.24577337473295,
+            "success": true,
+            "iterations": 10,
+            "evaluations": 12
+          },
+          {
+            "index": 6,
+            "x": [
+              39.92727893104067,
+              1.7830449303881883
+            ],
+            "nll": 204.24577337473306,
+            "success": true,
+            "iterations": 10,
+            "evaluations": 15
+          },
+          {
+            "index": 10,
+            "x": [
+              39.92727890493517,
+              1.7830449333358556
+            ],
+            "nll": 204.24577337473377,
+            "success": true,
+            "iterations": 6,
+            "evaluations": 8
+          }
+        ],
+        "seconds": 0.31229145798715763,
+        "ranking_seconds": 0.002030124989687465
+      },
+      "diagnostics": {
+        "rhat": [
+          1.0007614346963123,
+          1.0010946718293368
+        ],
+        "ess_bulk": [
+          5325.773872337184,
+          5127.521912137971
+        ],
+        "ess_tail": [
+          3132.01569325576,
+          2856.058648008998
+        ],
+        "converged": true,
+        "method": "rank-normalized/folded split R-hat; bulk and 5%/95% tail ESS"
+      },
+      "mean": [
+        39.926518720144536,
+        1.7830818832035664
+      ],
+      "sd": [
+        0.0753619573588659,
+        0.0037654475330442965
+      ],
+      "truth_error": [
+        -0.07348127985546427,
+        0.0030818832035663934
+      ],
+      "mean_error_in_own_reference_sd": [
+        -0.019083185426486116,
+        0.017942988626712605
+      ],
+      "acceptance": [
+        0.9678571428571429,
+        0.9585714285714285,
+        0.9478571428571428,
+        0.9628571428571429
+      ],
+      "production_divergences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "gradient_evaluations": 17523
+    },
+    {
+      "method": "neural",
+      "target": "neural approximate ratio posterior",
+      "sampling_seconds": 16.558289083011914,
+      "optimization": {
+        "candidates": [
+          {
+            "index": 2,
+            "x": [
+              39.92727893948927,
+              1.783044930167626
+            ],
+            "nll": 204.2457733747329,
+            "success": true,
+            "iterations": 6,
+            "evaluations": 9
+          },
+          {
+            "index": 14,
+            "x": [
+              39.92727894023844,
+              1.7830449301944624
+            ],
+            "nll": 204.24577337473295,
+            "success": true,
+            "iterations": 10,
+            "evaluations": 12
+          },
+          {
+            "index": 6,
+            "x": [
+              39.92727893104067,
+              1.7830449303881883
+            ],
+            "nll": 204.24577337473306,
+            "success": true,
+            "iterations": 10,
+            "evaluations": 15
+          },
+          {
+            "index": 10,
+            "x": [
+              39.92727890493517,
+              1.7830449333358556
+            ],
+            "nll": 204.24577337473377,
+            "success": true,
+            "iterations": 6,
+            "evaluations": 8
+          }
+        ],
+        "seconds": 0.31229145798715763,
+        "ranking_seconds": 0.002030124989687465
+      },
+      "diagnostics": {
+        "rhat": [
+          1.0017361168216878,
+          1.0030327928899616
+        ],
+        "ess_bulk": [
+          5600.0,
+          5600.0
+        ],
+        "ess_tail": [
+          2966.360483207806,
+          2712.013806890963
+        ],
+        "converged": true,
+        "method": "rank-normalized/folded split R-hat; bulk and 5%/95% tail ESS"
+      },
+      "mean": [
+        40.52915284347268,
+        1.769493652666312
+      ],
+      "sd": [
+        1.0110168065092486,
+        0.030727053701944923
+      ],
+      "truth_error": [
+        0.52915284347268,
+        -0.010506347333687938
+      ],
+      "mean_error_in_own_reference_sd": [
+        -0.003616006953255356,
+        0.013958135323132875
+      ],
+      "acceptance": [
+        0.955,
+        0.9285714285714286,
+        0.9685714285714285,
+        0.9485714285714286
+      ],
+      "production_divergences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "gradient_evaluations": 17523
+    }
+  ],
+  "neural_reference_mean_error_in_physical_sd": [
+    7.957304068974368,
+    -3.711287220420985
+  ],
+  "neural_to_physical_sd_ratio": [
+    13.344156550475754,
+    8.096533304986945
+  ],
+  "quadrature_refinement": {
+    "physical": [
+      1.4021638408267245e-12,
+      1.1818487015764674e-12
+    ],
+    "neural": [
+      2.7552467282235018e-05,
+      3.153822540013658e-05
+    ]
+  },
+  "checkpoint_sha256": "8b615df32faa340a7e88ce433555a2707b2ab83be4102e711148e754dc57fc57",
+  "scope": "One local two-dimensional example. Agreement with own neural grid tests sampling, not neural likelihood accuracy. No coverage or global exploration claim."
+}

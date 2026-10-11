@@ -1,0 +1,25 @@
+{
+  "created_utc": "2026-10-09T10:40:45.056709+00:00",
+  "cases": [
+    "uniform",
+    "gradient",
+    "lvz"
+  ],
+  "noise_sd": [
+    0.015,
+    0.05
+  ],
+  "seeds": [
+    100,
+    101,
+    102
+  ],
+  "stations_or_cases": 18,
+  "events_per_case": 48,
+  "event_split": "3 slowness bins; every fourth event held out (36 train,12 test); every fifth training event for inner validation",
+  "selection": "same v3 10 candidates; 16 starts; fixed inner reference; minimum dimension within 2% of best inner RMSE",
+  "profile_score": "0-50 km shear-speed RMSE at 0.1 km spacing; Moho absolute error separately",
+  "forward": "finer crustal layering, dt .05, nfft4096; refinement8192; inversion dt.2 nfft512; event-specific truth rays, mean-bin inverse rays",
+  "script_sha256": "c93c3a6ee52c51f8dd7bbd5624e608f256bb5b78177e96c87d35967bb0dd8f0b",
+  "target_sha256": "095326a626318499eab37e803f6dd1a03e7ce4dfc05584cbc1e2f1bfb6997859"
+}

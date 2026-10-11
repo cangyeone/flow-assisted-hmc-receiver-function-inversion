@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "cohort_protocol_sha256": "832493c5482f808b5d437ab4600d50642ad5de3ec39ce82c71dd2a4725f5cd93",
+  "unknowns": [
+    "internal_depth_km",
+    "Moho_depth_km",
+    "Vs_sediment_km_s",
+    "Vs_crust_km_s"
+  ],
+  "lower": [
+    0.05,
+    13.0,
+    0.5,
+    2.65
+  ],
+  "upper": [
+    60.0,
+    79.0,
+    4.2,
+    4.2
+  ],
+  "prior": "Uniform physical box, internal depth<Moho depth; author empirical Vp/rho/Q relationships; known two finite constant layers; no posterior truncation to selected modes",
+  "candidates": "2048 learned K2 draws plus8192 raw prior draws; pure-prior replaces each valid learned proposal by one valid prior proposal; same valid candidate scoring counts.32 MAP optimizations per arm:16 learned+16 prior vs global32 prior.300 iteration cap each.",
+  "candidate_role": "Genuine three-band/three-bin training RF only. Flow candidates are physical forward-scored; no network density or discriminator modifies target. Effective field sigma metadata and noise distribution may be outside training support.",
+  "generalization_policy": "One identical frozen million-structure synthetic-trained Transformer flow and checkpoint hash across all regions/stations. No region-specific training, fine tuning, labels, weights, hyperparameters or candidate-allocation policy. Observation-derived ray/noise context is inference input only. Regional held-out fits never update the model.",
+  "hmc": {
+    "chains": 4,
+    "steps": 4000,
+    "burn": 1500,
+    "mean_leaps": 8,
+    "target_accept": 0.95,
+    "metric": "fixed local RF curvature",
+    "velocity_MWG": "fixed symmetric block proposal and exact MH test"
+  },
+  "original": {
+    "chains": 4,
+    "steps": 60000,
+    "burn": 20000,
+    "schedule": "Unchanged shipped DRAM settings; random-machine-time seeds under TZ=Asia/Shanghai"
+  },
+  "data": "Genuine RFs recalculated from public raw three-component SAC, common target middle-bin gaussian2.5; joint target three bins/three bands with training covariance",
+  "assessment": "Balanced256 posterior draws/arm; all failures retained. Frozen4000/1500 prefixes2000,2500,3000,4000 diagnose sample budgets without new stopping decisions. Held-out RF predicts new events, not geological truth.",
+  "comparison_limits": "Original/common and joint targets reported separately. Sample budgets differ across kernels. Flow/candidate optimization and HMC sampling use remote GPU; the unmodified author program uses serial remote CPU processes. CPU portability checked separately. Timings recorded per stage; no hardware-independent speed factor or CUDA acceleration story.",
+  "checkpoint_sha256": "d4584c37ac1ba8ddcce1c817eedb5f88270ddddf88b037640b68c5457cdb87e2",
+  "original_binary_sha256": "cd82a9a0c80be95df17db9f59d0507c62e96ee5af3e3bd71220f7a28efc68854",
+  "source_sha256": "6156613131c2fb6c3c824855092311709c3cf7cc49418caa8af124941823f14e",
+  "kernel_sha256": "f05a93c974042ff2bcaf6d5797664b9dbd9ec609f4b6954b3986613a1382bce8"
+}

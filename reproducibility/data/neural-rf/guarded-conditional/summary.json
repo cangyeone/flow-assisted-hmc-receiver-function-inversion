@@ -1,0 +1,120 @@
+{
+  "protocol": {
+    "settings": {
+      "steps": 2200,
+      "burn_in": 800,
+      "leapfrog_steps": 8,
+      "target_accept": 0.9,
+      "seed": 31100
+    },
+    "initial": [
+      [
+        39.928298200995755,
+        1.782831522078499
+      ],
+      [
+        39.92749018059415,
+        1.782816504643631
+      ],
+      [
+        39.927334522643086,
+        1.783124615359365
+      ],
+      [
+        39.928966180269384,
+        1.7830369306254803
+      ]
+    ],
+    "checkpoint_sha256": "8b615df32faa340a7e88ce433555a2707b2ab83be4102e711148e754dc57fc57",
+    "driver_sha256": "62fa2316179841802532ec414bd04867661ca0ff6fe7692a979e5802bfee289c",
+    "kernel_sha256": "c5c2831db7af81eb7a5b005db48417a2897c1012d2834f0898c0227acf7d89e1",
+    "strength": 0.1,
+    "targets": "Both sample the exact same physical Gaussian posterior; neural contribution only changes proposal gradients.",
+    "cached_forward_max_difference": 1.1102230246251565e-16
+  },
+  "results": [
+    {
+      "method": "physical",
+      "seconds": 135.99504320799315,
+      "mean": [
+        39.9258056992411,
+        1.7831219408240486
+      ],
+      "sd": [
+        0.07720585895849567,
+        0.003831032838668889
+      ],
+      "diagnostics": {
+        "rhat": [
+          1.0008260784983236,
+          1.0000293969849676
+        ],
+        "ess_bulk": [
+          5488.328817413879,
+          5484.799292160064
+        ],
+        "ess_tail": [
+          2995.977791981045,
+          3045.6499625930223
+        ],
+        "converged": true,
+        "method": "rank-normalized/folded split R-hat; bulk and 5%/95% tail ESS"
+      },
+      "acceptance": [
+        0.97,
+        0.9564285714285714,
+        0.9557142857142857,
+        0.9492857142857143
+      ],
+      "production_divergences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "gradient_evaluations": 17523
+    },
+    {
+      "method": "guarded",
+      "seconds": 163.16266266700404,
+      "mean": [
+        39.92740849018564,
+        1.783064910064507
+      ],
+      "sd": [
+        0.07509040011435912,
+        0.0037463850277611246
+      ],
+      "diagnostics": {
+        "rhat": [
+          1.0034053206837192,
+          1.0019269836322866
+        ],
+        "ess_bulk": [
+          5600.0,
+          5600.0
+        ],
+        "ess_tail": [
+          2952.0522905615007,
+          2966.9761902608097
+        ],
+        "converged": true,
+        "method": "rank-normalized/folded split R-hat; bulk and 5%/95% tail ESS"
+      },
+      "acceptance": [
+        0.9607142857142857,
+        0.9542857142857143,
+        0.9635714285714285,
+        0.9628571428571429
+      ],
+      "production_divergences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "gradient_evaluations": 17523
+    }
+  ],
+  "scope": "One conditional example at matched cached forward, initial states and steps; not a broad efficiency or accuracy advantage."
+}

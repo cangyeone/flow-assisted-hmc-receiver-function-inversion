@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "flowrf"
+version = "0.1.0"
+description = "CPU flow-assisted multi-start Bayesian receiver-function inversion"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{name = "Yu Ziye"}]
+dependencies = ["numpy>=1.26", "scipy>=1.11", "torch>=2.4", "packaging>=23"]
+[project.optional-dependencies]
+plot = ["matplotlib>=3.8"]
+repro = ["matplotlib>=3.8", "obspy>=1.4", "requests>=2.31", "pyshp>=2.3"]
+test = ["pytest>=8"]
+[project.scripts]
+flowrf = "flowrf.cli:main"
+[project.urls]
+Repository = "https://github.com/cangyeone/flow-assisted-hmc-receiver-function-inversion"
+[tool.setuptools.packages.find]
+where = ["src"]
+[tool.setuptools.package-data]
+flowrf = ["weights/**/*.pt", "weights/**/*.json"]
+[tool.pytest.ini_options]
+testpaths = ["tests"]

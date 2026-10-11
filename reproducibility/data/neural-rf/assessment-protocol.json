@@ -1,0 +1,55 @@
+{
+  "selection": "Maximum frozen neural logit among all saved full-training candidates; no refit, no additional optimization or test-dependent tuning. Compare the previous training-selected basin MAP, retaining all adverse changes.",
+  "synthetic_cases": [
+    "shallow",
+    "deep"
+  ],
+  "noise": [
+    0.025,
+    0.06
+  ],
+  "seeds": [
+    200,
+    201,
+    202
+  ],
+  "field": "All 42 previous stations. Existing candidate pools and outer outcomes were previously inspected: continued exploratory diagnostic.",
+  "uncertainty": "Candidate ranking is a point-model check, not posterior intervals.",
+  "conditional": {
+    "truth": [
+      40.0,
+      1.78
+    ],
+    "bounds": [
+      [
+        38.0,
+        1.72
+      ],
+      [
+        42.0,
+        1.84
+      ]
+    ],
+    "fixed_hs": 1.5,
+    "fixed_vs_s": 2.4,
+    "noise": 0.035,
+    "p": [
+      0.044,
+      0.057,
+      0.075
+    ],
+    "seed": 31100,
+    "nodes": [
+      129,
+      257
+    ],
+    "steps": 2200,
+    "burn": 800,
+    "chains": 4,
+    "leapfrog_steps": 8,
+    "prior": "Same uniform bounded prior for physical and neural targets",
+    "initialization": "Same 16 Sobol points; original/guided use physical optimization with identical four-start iteration budgets, initialized by Sobol order / top neural scores. Both sample the exact same Gaussian RF target. Ratio HMC samples a different approximate target.",
+    "significance": "One conditional example, not simulation-based calibration or coverage validation"
+  },
+  "driver_sha256": "0e512799f84781d9fd8fb2d4a019361e373421f16f72fc32bf72e346edcbcf5e"
+}

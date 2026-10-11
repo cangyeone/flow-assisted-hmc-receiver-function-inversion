@@ -1,0 +1,125 @@
+{
+  "format": 1,
+  "default": "global-v2",
+  "model_sets": {
+    "global-v1": {
+      "forward": {
+        "file": "global-v1/forward.pt",
+        "sha256": "a05fd9faa8a3b6a8c8ce219ce434b755e4b8b56ba9ff3e12b9b7bca239953a9b",
+        "trained_sources": 1000000,
+        "selected_epoch": 40,
+        "validation": {
+          "objective": 0.25208201352506876,
+          "rf_rmse": 0.09993936587947824
+        }
+      },
+      "inverse": {
+        "file": "global-v1/inverse.pt",
+        "sha256": "728cd0121b04a1844a8cef53ecb933a2820e6c0cc1d76ffa49624951a66ad469",
+        "trained_sources": 1000000,
+        "selected_epoch": 40,
+        "validation": {
+          "joint_nll": 17.95964229106903,
+          "count_nll": 2.1458980217576027
+        }
+      },
+      "purpose": "CPU inference: forward emulator and conditional-flow initial candidates, not a calibrated field posterior"
+    },
+    "global-v2": {
+      "forward": {
+        "file": "global-v2/forward.pt",
+        "sha256": "c2b6645d30345e0be2c569eed5aac1ae7b9d04dd79a1686c6fb75f399a4759d1",
+        "trained_sources": 1000000,
+        "selected_epoch": 40,
+        "validation": {
+          "objective": 0.25208201352506876,
+          "rf_rmse": 0.09993936587947824
+        }
+      },
+      "inverse": {
+        "file": "global-v2/inverse.pt",
+        "sha256": "d4584c37ac1ba8ddcce1c817eedb5f88270ddddf88b037640b68c5457cdb87e2",
+        "trained_sources": 1000000,
+        "selected_epoch": 40,
+        "validation": {
+          "joint_nll": 17.95964229106903,
+          "count_nll": 2.1458980217576027
+        }
+      },
+      "purpose": "CPU inference: forward emulator and conditional-flow initial candidates, not a calibrated field posterior"
+    }
+  },
+  "experimental": [
+    {
+      "file": "reproducibility/models/transformer-pilot/forward.pt",
+      "sha256": "1fa2ee6feb12d65eef1db4e23d1d836567d69e0c39f7d58026ddbef996378b69",
+      "purpose": "training-stage checkpoint; not default scientific inference"
+    },
+    {
+      "file": "reproducibility/models/transformer-pilot/inverse.pt",
+      "sha256": "79715d185da85440fce46dcea32e7157f5cdc5007168b08c88fd576855314a86",
+      "purpose": "training-stage checkpoint; not default scientific inference"
+    },
+    {
+      "file": "reproducibility/models/transformer-bootstrap/forward.pt",
+      "sha256": "c96ef23ff8aa520713d22872c41678b5cf5bc6e74195ce4a115e4970c75ea514",
+      "purpose": "training-stage checkpoint; not default scientific inference"
+    },
+    {
+      "file": "reproducibility/models/transformer-bootstrap/inverse.pt",
+      "sha256": "8e569051bf66bbb1aeb1c603ce00785f85802774c17ef056263d41fae6eee568",
+      "purpose": "training-stage checkpoint; not default scientific inference"
+    },
+    {
+      "file": "reproducibility/models/neural-rf-v1/network.pt",
+      "sha256": "8b615df32faa340a7e88ce433555a2707b2ab83be4102e711148e754dc57fc57",
+      "purpose": "experimental scorer / observation-specific likelihood approximation; not default posterior constraint"
+    },
+    {
+      "file": "reproducibility/models/neural-rf-local-v3/easy_retrain/network.pt",
+      "sha256": "7a136b3b374b7835ad6d2baba2cd1b0a0a6f25c851eeb2c8971175e47b7856e5",
+      "purpose": "experimental scorer / observation-specific likelihood approximation; not default posterior constraint"
+    },
+    {
+      "file": "reproducibility/models/neural-rf-local-v3/local_retrain/network.pt",
+      "sha256": "48bcfe8272992862d0347f7be53e56702e7e7fc5ab284395cc17916f398f8275",
+      "purpose": "experimental scorer / observation-specific likelihood approximation; not default posterior constraint"
+    },
+    {
+      "file": "reproducibility/models/neural-rf-local-v4/easy_retrain/network.pt",
+      "sha256": "33d91dbdd39ded3c094f69a349a2ed781707858a37563430baf391e8846349a1",
+      "purpose": "experimental scorer / observation-specific likelihood approximation; not default posterior constraint"
+    },
+    {
+      "file": "reproducibility/models/neural-rf-local-v4/local_retrain/network.pt",
+      "sha256": "9e4afe9d3accf95b349c9af0b57fdf953dc3ed437ca761d5b4a7edfbb2c777d0",
+      "purpose": "experimental scorer / observation-specific likelihood approximation; not default posterior constraint"
+    },
+    {
+      "file": "reproducibility/models/neural-rf-local-v5/easy_retrain/network.pt",
+      "sha256": "33d91dbdd39ded3c094f69a349a2ed781707858a37563430baf391e8846349a1",
+      "purpose": "experimental scorer / observation-specific likelihood approximation; not default posterior constraint"
+    },
+    {
+      "file": "reproducibility/models/neural-rf-local-v5/local_retrain/network.pt",
+      "sha256": "52a57e10381e048580ee35ad2641734063d1ab35c55951b68e3d0b7db90ba8ef",
+      "purpose": "experimental scorer / observation-specific likelihood approximation; not default posterior constraint"
+    },
+    {
+      "file": "reproducibility/models/neural-rf-physics-v2/conditional/network.pt",
+      "sha256": "c671a09ca85e977b0a2f80c2b34a3988125c9a2c660274b1d85ed61990ef53a5",
+      "purpose": "experimental scorer / observation-specific likelihood approximation; not default posterior constraint"
+    },
+    {
+      "file": "reproducibility/models/neural-rf-physics-v2/V20A/network.pt",
+      "sha256": "7723f30d770875aaa39f987b48ca75fb2f32b0a148d91532837ed3564b701a48",
+      "purpose": "experimental scorer / observation-specific likelihood approximation; not default posterior constraint"
+    },
+    {
+      "file": "reproducibility/models/neural-rf-physics-v2/X20A/network.pt",
+      "sha256": "b98b57ea309bb9b4803182456b22a9d2ee4baab48f93a38a469de3b73bc9632f",
+      "purpose": "experimental scorer / observation-specific likelihood approximation; not default posterior constraint"
+    }
+  ],
+  "parameter_equivalence": "global-v1 and global-v2 contain exactly equal forward/inverse state tensors; checkpoint metadata differ. Not independent training runs."
+}

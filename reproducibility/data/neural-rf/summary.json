@@ -1,0 +1,141 @@
+{
+  "synthetic-ranking": {
+    "n": 12,
+    "improved": 2,
+    "worsened": 5,
+    "unchanged": 5,
+    "paired_median_gain_pct": 0.0,
+    "outside_context": 12,
+    "recovery_improved": {
+      "Vs_rmse": 1,
+      "sediment_Vs_rmse": 1,
+      "H_error": 4
+    }
+  },
+  "field-ranking": {
+    "n": 42,
+    "improved": 3,
+    "worsened": 37,
+    "unchanged": 2,
+    "paired_median_gain_pct": -10.32830546392358,
+    "outside_context": 42
+  },
+  "classification": {
+    "test_pairs": 1500,
+    "bce": 0.04190436378121376,
+    "auc": 0.9976048888888889,
+    "brier": 0.009097014123612619,
+    "local_stress_n": 256,
+    "matched_above_perturbed_fraction": 0.84765625,
+    "split_layer_max_logit_difference": 9.5367431640625e-07
+  },
+  "conditional_neural_bias_sd": [
+    7.957304068974368,
+    -3.711287220420985
+  ],
+  "conditional_neural_width_ratio": [
+    13.344156550475754,
+    8.096533304986945
+  ],
+  "guarded": [
+    {
+      "method": "physical",
+      "seconds": 135.99504320799315,
+      "mean": [
+        39.9258056992411,
+        1.7831219408240486
+      ],
+      "sd": [
+        0.07720585895849567,
+        0.003831032838668889
+      ],
+      "diagnostics": {
+        "rhat": [
+          1.0008260784983236,
+          1.0000293969849676
+        ],
+        "ess_bulk": [
+          5488.328817413879,
+          5484.799292160064
+        ],
+        "ess_tail": [
+          2995.977791981045,
+          3045.6499625930223
+        ],
+        "converged": true,
+        "method": "rank-normalized/folded split R-hat; bulk and 5%/95% tail ESS"
+      },
+      "acceptance": [
+        0.97,
+        0.9564285714285714,
+        0.9557142857142857,
+        0.9492857142857143
+      ],
+      "production_divergences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "gradient_evaluations": 17523,
+      "mean_error_in_physical_reference_sd": [
+        -0.028463546646446437,
+        0.028603469832981735
+      ]
+    },
+    {
+      "method": "guarded",
+      "seconds": 163.16266266700404,
+      "mean": [
+        39.92740849018564,
+        1.783064910064507
+      ],
+      "sd": [
+        0.07509040011435912,
+        0.0037463850277611246
+      ],
+      "diagnostics": {
+        "rhat": [
+          1.0034053206837192,
+          1.0019269836322866
+        ],
+        "ess_bulk": [
+          5600.0,
+          5600.0
+        ],
+        "ess_tail": [
+          2952.0522905615007,
+          2966.9761902608097
+        ],
+        "converged": true,
+        "method": "rank-normalized/folded split R-hat; bulk and 5%/95% tail ESS"
+      },
+      "acceptance": [
+        0.9607142857142857,
+        0.9542857142857143,
+        0.9635714285714285,
+        0.9628571428571429
+      ],
+      "production_divergences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "gradient_evaluations": 17523,
+      "mean_error_in_physical_reference_sd": [
+        -0.0073775476982184725,
+        0.013425949726861081
+      ]
+    }
+  ],
+  "recommendation": "Retain physical density; neural guidance optional and experimental. Do not use free neural scores to replace regional likelihood or validate geological truth. No demonstrated speed/precision advantage.",
+  "within_context_mean_error_sd": [
+    1.6001588521944012,
+    -3.8218523253095382
+  ],
+  "within_context_width_ratio": [
+    13.545238817714889,
+    7.722676827070739
+  ]
+}

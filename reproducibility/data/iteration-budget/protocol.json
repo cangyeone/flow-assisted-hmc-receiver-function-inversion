@@ -1,0 +1,28 @@
+{
+  "warmup": 1500,
+  "chains": 8,
+  "total_iterations": [
+    1750,
+    2000,
+    2500,
+    3000,
+    6000
+  ],
+  "reference": "Each workflow shares states with its 6000-iteration full-chain reference.",
+  "production_predictions": "All (total_iterations-1500)*8 states, including rejections, evaluated with exact physical Target.",
+  "target_and_input_sources": "../flow-initialization",
+  "primary_iteration_option": 3000,
+  "selection": "Suggested from retrospective parameter screen before RF evaluation; same reused structures.",
+  "diagnostic_thresholds": {
+    "rank_folded_rhat_lt": 1.01,
+    "bulk_ess_ge": 400,
+    "tail_ess_ge": 400
+  },
+  "restrictions": [
+    "No new independent sampling",
+    "Warmup not shortened",
+    "No elapsed-time speedup",
+    "Neither regional nor external original DRAM schedule changed",
+    "No flow-only iteration saving claimed"
+  ]
+}

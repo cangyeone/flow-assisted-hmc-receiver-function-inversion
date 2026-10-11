@@ -1,0 +1,17 @@
+[
+  {
+    "previous_source_sha256": "6156613131c2fb6c3c824855092311709c3cf7cc49418caa8af124941823f14e",
+    "repaired_source_sha256": "f3f2369d9291fe8e96178a42fff8bfacc98a5d9021d363af810f0c13c29e9a09",
+    "numerical_audit_passed": true,
+    "numerical_audit_sha256": "acd28af8f827bf580521ccd965418b31b3f85a2e2b33503d80e5282194287fc7",
+    "reason": "Replace dynamic boolean index with identical fixed index for CUDA graph capture. No checkpoint, target, observations, bounds, priors, initialization allocation, optimizer settings or sampler settings changed. Original failed logs and source retained.",
+    "time_unix": 1791717492.4605198
+  },
+  {
+    "previous_source_sha256": "6156613131c2fb6c3c824855092311709c3cf7cc49418caa8af124941823f14e",
+    "repaired_source_sha256": "c1053728cb1b8803e1ce5c0583a1a9fe67c229c92ae43b43a5e7b2d045bea3ba",
+    "numerical_audit_passed": true,
+    "numerical_audit_sha256": "7405e2a62a28d612232db0b5d57253c8c4565361a6e60c9d80bdc791719398b7",
+    "reason": "Same audited index repair plus immutable global-checkpoint/observation guards; no arithmetic or scientific protocol changes. Preserve original source and failures."
+  }
+]

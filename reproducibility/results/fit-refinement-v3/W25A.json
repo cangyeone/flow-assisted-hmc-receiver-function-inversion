@@ -1,0 +1,6058 @@
+{
+  "station": "W25A",
+  "device": "cpu",
+  "thread_count": 1,
+  "starts": 16,
+  "maxiter": 300,
+  "seed": 728,
+  "selection": "lowest inner validation RMSE; prefer lower dimension within 2% of minimum",
+  "selected": "layer5_diagonal",
+  "checks": [
+    {
+      "model": "legacy",
+      "covariance": "full",
+      "key": "legacy_full",
+      "names": [
+        "hs",
+        "Vs_s",
+        "H",
+        "kappa"
+      ],
+      "bounds": [
+        [
+          0.2,
+          1.5,
+          22.0,
+          1.6
+        ],
+        [
+          8.0,
+          3.2,
+          65.0,
+          2.0
+        ]
+      ],
+      "smooth": 1.0,
+      "fit_window_s": [
+        0.8,
+        26.0
+      ],
+      "inner_candidates": [
+        {
+          "start": 13,
+          "x": [
+            2.285962424013525,
+            3.1998300000000004,
+            55.16087983133705,
+            1.6134377053107694
+          ],
+          "nll": 257.05839762307824,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 25
+        },
+        {
+          "start": 5,
+          "x": [
+            0.20078000000000001,
+            3.1998300000000004,
+            55.492716213397635,
+            1.6252251595271328
+          ],
+          "nll": 305.33980443825635,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL",
+          "iterations": 11
+        },
+        {
+          "start": 1,
+          "x": [
+            0.20078000000000001,
+            3.1998300000000004,
+            55.4927161495324,
+            1.6252250794902332
+          ],
+          "nll": 305.33980443866767,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 11
+        },
+        {
+          "start": 10,
+          "x": [
+            0.20078000000000001,
+            3.1998300000000004,
+            55.4927161495324,
+            1.6252250794902332
+          ],
+          "nll": 305.33980443866767,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 11
+        },
+        {
+          "start": 12,
+          "x": [
+            0.20078000000000001,
+            3.1998300000000004,
+            55.4927161495324,
+            1.6252250794902332
+          ],
+          "nll": 305.33980443866767,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 12
+        },
+        {
+          "start": 6,
+          "x": [
+            0.20078000000000001,
+            3.1998300000000004,
+            47.23876143184053,
+            1.6000400000000001
+          ],
+          "nll": 399.87106665481787,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL",
+          "iterations": 8
+        },
+        {
+          "start": 14,
+          "x": [
+            0.20078000000000001,
+            3.1998300000000004,
+            23.01236486544784,
+            1.6000400000000001
+          ],
+          "nll": 454.0101407274001,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 9
+        },
+        {
+          "start": 15,
+          "x": [
+            0.20078000000000001,
+            3.1998300000000004,
+            23.01236537053706,
+            1.6000400000000001
+          ],
+          "nll": 454.0101407274009,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 6
+        },
+        {
+          "start": 2,
+          "x": [
+            0.20078000000000001,
+            3.1998300000000004,
+            23.012363586181216,
+            1.6000400000000001
+          ],
+          "nll": 454.01014072740816,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 8
+        },
+        {
+          "start": 11,
+          "x": [
+            0.20078000000000001,
+            3.1998300000000004,
+            64.9957,
+            1.8942655880445085
+          ],
+          "nll": 455.13994681112723,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 6
+        },
+        {
+          "start": 0,
+          "x": [
+            0.20078000000000001,
+            3.1998300000000004,
+            64.9957,
+            1.8942655877853998
+          ],
+          "nll": 455.13994681112786,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 6
+        },
+        {
+          "start": 8,
+          "x": [
+            0.20078000000000001,
+            3.1998300000000004,
+            64.9957,
+            1.750256136863953
+          ],
+          "nll": 477.91472804895847,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL",
+          "iterations": 6
+        },
+        {
+          "start": 3,
+          "x": [
+            7.99922,
+            3.1998300000000004,
+            62.79931351612541,
+            1.9326445304399456
+          ],
+          "nll": 571.5862305697498,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL",
+          "iterations": 8
+        },
+        {
+          "start": 4,
+          "x": [
+            6.823312409347477,
+            3.1998300000000004,
+            22.0043,
+            1.6537481108065557
+          ],
+          "nll": 782.1719585893184,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 19
+        },
+        {
+          "start": 7,
+          "x": [
+            7.99922,
+            3.1998300000000004,
+            22.0043,
+            1.6376926434326606
+          ],
+          "nll": 854.2179498699111,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL",
+          "iterations": 11
+        },
+        {
+          "start": 9,
+          "x": [
+            7.99922,
+            3.1998300000000004,
+            22.0043,
+            1.637692643425792
+          ],
+          "nll": 854.2179498699111,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL",
+          "iterations": 10
+        }
+      ],
+      "inner_seconds": 1.1063753330090549,
+      "validation": {
+        "rmse": 0.12679825849523793,
+        "correlation": 0.42149194877814145
+      },
+      "full_candidates": [
+        {
+          "start": 0,
+          "x": [
+            2.2908329741678557,
+            3.1998300000000004,
+            55.23406094403697,
+            1.6117749948821118
+          ],
+          "nll": 257.90803223513973,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 7
+        },
+        {
+          "start": 13,
+          "x": [
+            2.2908327764562166,
+            3.1998300000000004,
+            55.23405844451979,
+            1.6117750498544956
+          ],
+          "nll": 257.9080322351976,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 18
+        },
+        {
+          "start": 5,
+          "x": [
+            0.20078000000000001,
+            3.1998300000000004,
+            58.21824849754977,
+            1.6000400000000001
+          ],
+          "nll": 297.23744208689175,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL",
+          "iterations": 7
+        },
+        {
+          "start": 2,
+          "x": [
+            0.20078000000000001,
+            3.1998300000000004,
+            58.21824854146631,
+            1.6000400000000001
+          ],
+          "nll": 297.23744208689186,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 5
+        },
+        {
+          "start": 6,
+          "x": [
+            0.20078000000000001,
+            3.1998300000000004,
+            58.21824849622092,
+            1.6000400000000001
+          ],
+          "nll": 297.23744208689186,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL",
+          "iterations": 9
+        },
+        {
+          "start": 10,
+          "x": [
+            0.20078000000000001,
+            3.1998300000000004,
+            55.30307832206375,
+            1.6276013200888255
+          ],
+          "nll": 309.7104321517281,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 10
+        },
+        {
+          "start": 1,
+          "x": [
+            0.20078000000000001,
+            3.1998300000000004,
+            22.137446385396203,
+            1.6000400000000001
+          ],
+          "nll": 429.77384290286346,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 6
+        },
+        {
+          "start": 8,
+          "x": [
+            0.20078000000000001,
+            3.1998300000000004,
+            22.137446378293767,
+            1.6000400000000001
+          ],
+          "nll": 429.7738429028635,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL",
+          "iterations": 5
+        },
+        {
+          "start": 14,
+          "x": [
+            0.20078000000000001,
+            3.1998300000000004,
+            22.137446388256375,
+            1.6000400000000001
+          ],
+          "nll": 429.7738429028635,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 5
+        },
+        {
+          "start": 15,
+          "x": [
+            0.20078000000000001,
+            3.1998300000000004,
+            22.13744637822442,
+            1.6000400000000001
+          ],
+          "nll": 429.7738429028635,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL",
+          "iterations": 5
+        },
+        {
+          "start": 12,
+          "x": [
+            0.20078000000000001,
+            3.1998300000000004,
+            64.9957,
+            1.8315544376481399
+          ],
+          "nll": 463.204492708118,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL",
+          "iterations": 7
+        },
+        {
+          "start": 7,
+          "x": [
+            6.023518215806206,
+            3.1998300000000004,
+            34.93386988036213,
+            1.6000400000000001
+          ],
+          "nll": 547.1132541551046,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 17
+        },
+        {
+          "start": 3,
+          "x": [
+            7.99922,
+            3.1998300000000004,
+            62.671846458573334,
+            1.93628587379016
+          ],
+          "nll": 568.0836756914664,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 9
+        },
+        {
+          "start": 11,
+          "x": [
+            7.99922,
+            3.1998300000000004,
+            61.51317975708756,
+            1.9560661839409033
+          ],
+          "nll": 569.4520288745539,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 10
+        },
+        {
+          "start": 4,
+          "x": [
+            7.477809400673744,
+            3.1998300000000004,
+            23.582759466757373,
+            1.6707893383944081
+          ],
+          "nll": 765.4979317788127,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 12
+        },
+        {
+          "start": 9,
+          "x": [
+            7.4778110504400335,
+            3.1998300000000004,
+            23.582763161225415,
+            1.6707886684996929
+          ],
+          "nll": 765.497931784221,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 17
+        }
+      ],
+      "full_seconds": 0.9267426669975976,
+      "selected": false,
+      "train": {
+        "rmse": 0.07707888110731456,
+        "correlation": 0.5701526840228619
+      },
+      "test": {
+        "rmse": 0.07396384687854751,
+        "correlation": 0.480452828977937
+      }
+    },
+    {
+      "model": "legacy",
+      "covariance": "diagonal",
+      "key": "legacy_diagonal",
+      "names": [
+        "hs",
+        "Vs_s",
+        "H",
+        "kappa"
+      ],
+      "bounds": [
+        [
+          0.2,
+          1.5,
+          22.0,
+          1.6
+        ],
+        [
+          8.0,
+          3.2,
+          65.0,
+          2.0
+        ]
+      ],
+      "smooth": 1.0,
+      "fit_window_s": [
+        0.8,
+        26.0
+      ],
+      "inner_candidates": [
+        {
+          "start": 11,
+          "x": [
+            2.5085585713305183,
+            3.1998300000000004,
+            42.9096006725607,
+            1.7694257334692074
+          ],
+          "nll": 96.25587417403183,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 13
+        },
+        {
+          "start": 0,
+          "x": [
+            2.5085583303556684,
+            3.1998300000000004,
+            42.90959991006724,
+            1.769425765515257
+          ],
+          "nll": 96.2558741740346,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 18
+        },
+        {
+          "start": 2,
+          "x": [
+            0.20078000000000001,
+            3.1998300000000004,
+            54.54872004543972,
+            1.6381202975314633
+          ],
+          "nll": 101.753744938935,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 19
+        },
+        {
+          "start": 10,
+          "x": [
+            0.20078000000000001,
+            3.1998300000000004,
+            62.65147579019125,
+            1.6000400000000001
+          ],
+          "nll": 120.87804775386891,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 5
+        },
+        {
+          "start": 5,
+          "x": [
+            0.20078000000000001,
+            3.1998300000000004,
+            62.65147601041198,
+            1.6000400000000001
+          ],
+          "nll": 120.87804775386957,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 4
+        },
+        {
+          "start": 9,
+          "x": [
+            2.3584906492796196,
+            3.1998300000000004,
+            64.9957,
+            1.6000400000000001
+          ],
+          "nll": 135.26108594658575,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 16
+        },
+        {
+          "start": 1,
+          "x": [
+            0.23273268722964607,
+            1.50017,
+            22.0043,
+            1.6000400000000001
+          ],
+          "nll": 162.65613488012374,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 16
+        },
+        {
+          "start": 6,
+          "x": [
+            0.23273269135529712,
+            1.50017,
+            22.0043,
+            1.6000400000000001
+          ],
+          "nll": 162.65613488012377,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL",
+          "iterations": 20
+        },
+        {
+          "start": 7,
+          "x": [
+            0.23273269202073768,
+            1.50017,
+            22.0043,
+            1.6000400000000001
+          ],
+          "nll": 162.65613488012377,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL",
+          "iterations": 14
+        },
+        {
+          "start": 13,
+          "x": [
+            0.2327326935419572,
+            1.50017,
+            22.0043,
+            1.6000400000000001
+          ],
+          "nll": 162.65613488012377,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 16
+        },
+        {
+          "start": 15,
+          "x": [
+            0.23273271566707213,
+            1.50017,
+            22.0043,
+            1.6000400000000001
+          ],
+          "nll": 162.65613488012403,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 12
+        },
+        {
+          "start": 14,
+          "x": [
+            0.23273277384950333,
+            1.50017,
+            22.0043,
+            1.6000400000000001
+          ],
+          "nll": 162.65613488012713,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 15
+        },
+        {
+          "start": 3,
+          "x": [
+            2.5411719964589494,
+            3.1998300000000004,
+            64.9957,
+            1.890019647136653
+          ],
+          "nll": 166.94045608977186,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL",
+          "iterations": 11
+        },
+        {
+          "start": 12,
+          "x": [
+            0.23684061107353535,
+            1.50017,
+            64.9957,
+            1.89270975483954
+          ],
+          "nll": 170.42337917183815,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 30
+        },
+        {
+          "start": 8,
+          "x": [
+            0.2368412199873287,
+            1.50017,
+            64.9957,
+            1.892709626402114
+          ],
+          "nll": 170.4233791721582,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 28
+        },
+        {
+          "start": 4,
+          "x": [
+            7.99922,
+            3.1998300000000004,
+            22.0043,
+            1.640020709243498
+          ],
+          "nll": 293.3850746554489,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL",
+          "iterations": 7
+        }
+      ],
+      "inner_seconds": 1.245078583000577,
+      "validation": {
+        "rmse": 0.1296405420602416,
+        "correlation": 0.40097315569874215
+      },
+      "full_candidates": [
+        {
+          "start": 5,
+          "x": [
+            0.20078000000000001,
+            3.129142150098677,
+            54.57196770807255,
+            1.6350732099780523
+          ],
+          "nll": 105.14448773404956,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 10
+        },
+        {
+          "start": 0,
+          "x": [
+            2.5011749657963462,
+            3.1998300000000004,
+            43.34401928135286,
+            1.7587695827606893
+          ],
+          "nll": 105.34147154203396,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 11
+        },
+        {
+          "start": 12,
+          "x": [
+            0.20078000000000001,
+            3.1998300000000004,
+            62.302140298396914,
+            1.6000400000000001
+          ],
+          "nll": 127.96287184260936,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL",
+          "iterations": 24
+        },
+        {
+          "start": 3,
+          "x": [
+            0.20078000000000001,
+            3.1998300000000004,
+            62.302140193821785,
+            1.6000400000000001
+          ],
+          "nll": 127.9628718426094,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 14
+        },
+        {
+          "start": 10,
+          "x": [
+            0.20078000000000001,
+            3.1998300000000004,
+            62.30214017295522,
+            1.6000400000000001
+          ],
+          "nll": 127.96287184260942,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 4
+        },
+        {
+          "start": 2,
+          "x": [
+            0.22929494640968104,
+            1.50017,
+            40.008093548415474,
+            1.6000400000000001
+          ],
+          "nll": 142.82931353928876,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 24
+        },
+        {
+          "start": 11,
+          "x": [
+            2.5236757030893746,
+            3.1998300000000004,
+            22.0043,
+            1.6000400000000001
+          ],
+          "nll": 163.0490584767237,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL",
+          "iterations": 11
+        },
+        {
+          "start": 4,
+          "x": [
+            0.2318917212451734,
+            1.50017,
+            22.0043,
+            1.6000400000000001
+          ],
+          "nll": 168.81660281982107,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL",
+          "iterations": 18
+        },
+        {
+          "start": 6,
+          "x": [
+            0.2318917208792794,
+            1.50017,
+            22.0043,
+            1.6000400000000001
+          ],
+          "nll": 168.81660281982107,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL",
+          "iterations": 16
+        },
+        {
+          "start": 14,
+          "x": [
+            0.23189172167629546,
+            1.50017,
+            22.0043,
+            1.6000400000000001
+          ],
+          "nll": 168.81660281982107,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL",
+          "iterations": 17
+        },
+        {
+          "start": 15,
+          "x": [
+            0.23189171784960877,
+            1.50017,
+            22.0043,
+            1.6000400000000001
+          ],
+          "nll": 168.81660281982107,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 14
+        },
+        {
+          "start": 13,
+          "x": [
+            0.23189171529390784,
+            1.50017,
+            22.0043,
+            1.6000400000000001
+          ],
+          "nll": 168.8166028198211,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 15
+        },
+        {
+          "start": 7,
+          "x": [
+            0.23189172712884798,
+            1.50017,
+            22.0043,
+            1.6000400000000001
+          ],
+          "nll": 168.81660281982113,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 15
+        },
+        {
+          "start": 1,
+          "x": [
+            0.23189173397483914,
+            1.50017,
+            22.0043,
+            1.6000400000000001
+          ],
+          "nll": 168.81660281982116,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 16
+        },
+        {
+          "start": 8,
+          "x": [
+            0.23878231926864674,
+            1.50017,
+            64.9957,
+            1.89617305834531
+          ],
+          "nll": 176.62631664546228,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 27
+        },
+        {
+          "start": 9,
+          "x": [
+            5.776561666183878,
+            3.1998300000000004,
+            64.33775903027399,
+            1.9092938185260966
+          ],
+          "nll": 200.09631162359074,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 15
+        }
+      ],
+      "full_seconds": 1.32522537499608,
+      "selected": false,
+      "train": {
+        "rmse": 0.08881129929819083,
+        "correlation": 0.32465469733854463
+      },
+      "test": {
+        "rmse": 0.078807528325102,
+        "correlation": 0.3271950283908173
+      }
+    },
+    {
+      "model": "timing",
+      "covariance": "full",
+      "key": "timing_full",
+      "names": [
+        "hs",
+        "Vs_s",
+        "H",
+        "kappa",
+        "P_time_shift_s"
+      ],
+      "bounds": [
+        [
+          0.2,
+          1.5,
+          22.0,
+          1.6,
+          -0.6
+        ],
+        [
+          8.0,
+          3.2,
+          65.0,
+          2.0,
+          0.6
+        ]
+      ],
+      "smooth": 1.0,
+      "fit_window_s": [
+        -0.6,
+        26.0
+      ],
+      "inner_candidates": [
+        {
+          "start": 14,
+          "x": [
+            2.1621481561393736,
+            3.1998300000000004,
+            55.22796954471756,
+            1.60073714255857,
+            0.10592130040286363
+          ],
+          "nll": 293.8215890288238,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 26
+        },
+        {
+          "start": 1,
+          "x": [
+            0.20078000000000001,
+            3.1998300000000004,
+            55.5333682375188,
+            1.6090156788605205,
+            0.14498497040754166
+          ],
+          "nll": 340.44379859125553,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 26
+        },
+        {
+          "start": 10,
+          "x": [
+            1.9727828051833025,
+            3.1998300000000004,
+            43.41326402948921,
+            1.7480420625812907,
+            0.12226578472265925
+          ],
+          "nll": 435.4824806380219,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 23
+        },
+        {
+          "start": 0,
+          "x": [
+            1.9727858793590243,
+            3.1998300000000004,
+            43.41324742222399,
+            1.748042901135411,
+            0.12226567609508232
+          ],
+          "nll": 435.4824806618861,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 20
+        },
+        {
+          "start": 11,
+          "x": [
+            2.1565454411072547,
+            3.1998300000000004,
+            64.9957,
+            1.8052864370327215,
+            0.11425194123460825
+          ],
+          "nll": 473.9582359164102,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 20
+        },
+        {
+          "start": 9,
+          "x": [
+            2.191763119631181,
+            3.1998300000000004,
+            33.57699758582212,
+            1.6000400000000001,
+            0.09168246095071109
+          ],
+          "nll": 481.72906920203195,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 25
+        },
+        {
+          "start": 2,
+          "x": [
+            2.179888024424587,
+            3.1998300000000004,
+            25.63772391881774,
+            1.6000400000000001,
+            0.08844023899416054
+          ],
+          "nll": 482.93160181828625,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 21
+        },
+        {
+          "start": 13,
+          "x": [
+            0.20078000000000001,
+            3.1998300000000004,
+            43.78841590050025,
+            1.7462751546522783,
+            0.14438739627045494
+          ],
+          "nll": 483.8211319661604,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 30
+        },
+        {
+          "start": 8,
+          "x": [
+            2.1701662685321934,
+            3.1998300000000004,
+            64.9957,
+            1.7369340827436117,
+            0.11081076064821038
+          ],
+          "nll": 491.3407649425848,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 18
+        },
+        {
+          "start": 6,
+          "x": [
+            2.1701662082423496,
+            3.1998300000000004,
+            64.9957,
+            1.73693411750595,
+            0.1108107774509477
+          ],
+          "nll": 491.34076494266435,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 25
+        },
+        {
+          "start": 5,
+          "x": [
+            2.0097308221084944,
+            3.1998300000000004,
+            37.865311460135985,
+            1.6000400000000001,
+            0.08730516101892782
+          ],
+          "nll": 495.40615340352207,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 23
+        },
+        {
+          "start": 7,
+          "x": [
+            2.0097312553633473,
+            3.1998300000000004,
+            37.86531160276026,
+            1.6000400000000001,
+            0.0873051903737243
+          ],
+          "nll": 495.40615340354253,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 22
+        },
+        {
+          "start": 15,
+          "x": [
+            2.0097293070124116,
+            3.1998300000000004,
+            37.86531819523766,
+            1.6000400000000001,
+            0.08730516271331856
+          ],
+          "nll": 495.4061534073315,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 15
+        },
+        {
+          "start": 4,
+          "x": [
+            5.316955609479495,
+            3.1998300000000004,
+            42.73636533469045,
+            1.7643869229928035,
+            0.11845618945990344
+          ],
+          "nll": 705.5516954368239,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 29
+        },
+        {
+          "start": 3,
+          "x": [
+            7.618530542693756,
+            3.1998300000000004,
+            64.9957,
+            1.8024262259460702,
+            0.11480065614555168
+          ],
+          "nll": 739.805379686503,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 15
+        },
+        {
+          "start": 12,
+          "x": [
+            5.902209517813803,
+            3.1998300000000004,
+            50.153460380794414,
+            1.834250873642096,
+            0.10455965036912418
+          ],
+          "nll": 916.2457924246045,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 24
+        }
+      ],
+      "inner_seconds": 1.6253005409962498,
+      "validation": {
+        "rmse": 0.1250239429841164,
+        "correlation": 0.4504249304052205
+      },
+      "full_candidates": [
+        {
+          "start": 0,
+          "x": [
+            2.1499963370387096,
+            3.1998300000000004,
+            55.37279967524441,
+            1.6000400000000001,
+            0.10035584324513347
+          ],
+          "nll": 287.6867314253731,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 10
+        },
+        {
+          "start": 14,
+          "x": [
+            2.149996327241884,
+            3.1998300000000004,
+            55.37279980447619,
+            1.6000400000000001,
+            0.10035582501859941
+          ],
+          "nll": 287.68673142537864,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 23
+        },
+        {
+          "start": 1,
+          "x": [
+            2.149996080905359,
+            3.1998300000000004,
+            55.37280123249974,
+            1.6000400000000001,
+            0.1003558187282213
+          ],
+          "nll": 287.6867314254939,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 18
+        },
+        {
+          "start": 2,
+          "x": [
+            2.143671288249453,
+            3.1998300000000004,
+            48.39475209765606,
+            1.6858166979614235,
+            0.09022259286600953
+          ],
+          "nll": 436.34978053652077,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 22
+        },
+        {
+          "start": 4,
+          "x": [
+            0.20078000000000001,
+            3.1998300000000004,
+            46.82538301291959,
+            1.6000400000000001,
+            0.13601933877005568
+          ],
+          "nll": 441.05394217855803,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 28
+        },
+        {
+          "start": 8,
+          "x": [
+            2.186132491031603,
+            3.1998300000000004,
+            64.9957,
+            1.7419254114713238,
+            0.10839992774832319
+          ],
+          "nll": 448.41121254827254,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 19
+        },
+        {
+          "start": 6,
+          "x": [
+            2.1861324915411924,
+            3.1998300000000004,
+            64.9957,
+            1.741925532220995,
+            0.10839999995691796
+          ],
+          "nll": 448.41121254881966,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 23
+        },
+        {
+          "start": 11,
+          "x": [
+            2.13822119574211,
+            3.150974232379782,
+            64.9957,
+            1.8037595282401562,
+            0.10543308921809447
+          ],
+          "nll": 449.3240994402641,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 23
+        },
+        {
+          "start": 15,
+          "x": [
+            2.148229413584679,
+            3.1998300000000004,
+            35.926502847059965,
+            1.6000400000000001,
+            0.08199821560614362
+          ],
+          "nll": 467.6847809327408,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 18
+        },
+        {
+          "start": 9,
+          "x": [
+            2.1482294262903787,
+            3.1998300000000004,
+            35.92650185065715,
+            1.6000400000000001,
+            0.08199824360537744
+          ],
+          "nll": 467.6847809328449,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 22
+        },
+        {
+          "start": 13,
+          "x": [
+            0.20078000000000001,
+            3.1998300000000004,
+            41.723915916899,
+            1.6000400000000001,
+            0.1326410945043126
+          ],
+          "nll": 472.8501046513135,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 27
+        },
+        {
+          "start": 5,
+          "x": [
+            0.20078000000000001,
+            3.1998300000000004,
+            30.21494008167039,
+            1.6000400000000001,
+            0.13148718598126463
+          ],
+          "nll": 490.1739985327555,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 21
+        },
+        {
+          "start": 7,
+          "x": [
+            5.153293032975021,
+            3.1998300000000004,
+            42.71192497751339,
+            1.7651024520864869,
+            0.11692113067160492
+          ],
+          "nll": 661.3570663759739,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 23
+        },
+        {
+          "start": 3,
+          "x": [
+            7.616423605824505,
+            3.1998300000000004,
+            64.9957,
+            1.8020354869024424,
+            0.105409993179987
+          ],
+          "nll": 713.3561274402822,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 19
+        },
+        {
+          "start": 10,
+          "x": [
+            1.8223127293430514,
+            3.075790504713769,
+            34.73985808310556,
+            1.9631419385663595,
+            0.09644776826623247
+          ],
+          "nll": 858.1592479040855,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 24
+        },
+        {
+          "start": 12,
+          "x": [
+            5.865267576093879,
+            3.1998300000000004,
+            48.36127149161057,
+            1.8559738977101656,
+            0.10600916025492146
+          ],
+          "nll": 900.8894790823243,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 26
+        }
+      ],
+      "full_seconds": 1.7215225420077331,
+      "selected": false,
+      "train": {
+        "rmse": 0.07601262474662497,
+        "correlation": 0.5918721648207718
+      },
+      "test": {
+        "rmse": 0.07468429564750473,
+        "correlation": 0.4956704267724665
+      }
+    },
+    {
+      "model": "timing",
+      "covariance": "diagonal",
+      "key": "timing_diagonal",
+      "names": [
+        "hs",
+        "Vs_s",
+        "H",
+        "kappa",
+        "P_time_shift_s"
+      ],
+      "bounds": [
+        [
+          0.2,
+          1.5,
+          22.0,
+          1.6,
+          -0.6
+        ],
+        [
+          8.0,
+          3.2,
+          65.0,
+          2.0,
+          0.6
+        ]
+      ],
+      "smooth": 1.0,
+      "fit_window_s": [
+        -0.6,
+        26.0
+      ],
+      "inner_candidates": [
+        {
+          "start": 1,
+          "x": [
+            2.252317402995116,
+            3.1998300000000004,
+            54.90064116828853,
+            1.603038312043458,
+            0.11628958326620709
+          ],
+          "nll": 91.40672169220983,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 24
+        },
+        {
+          "start": 11,
+          "x": [
+            2.25231677429678,
+            3.1998300000000004,
+            54.90063877161503,
+            1.6030383227871128,
+            0.1162895162666171
+          ],
+          "nll": 91.40672169225887,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 18
+        },
+        {
+          "start": 6,
+          "x": [
+            0.20078000000000001,
+            3.1998300000000004,
+            54.848440431118256,
+            1.6129228737270256,
+            0.1818208099590708
+          ],
+          "nll": 107.71006373208651,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 24
+        },
+        {
+          "start": 0,
+          "x": [
+            2.313974806348278,
+            3.1998300000000004,
+            43.33676494190301,
+            1.741041657617965,
+            0.11481809785686736
+          ],
+          "nll": 108.10833754767067,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 18
+        },
+        {
+          "start": 2,
+          "x": [
+            2.3139747149623506,
+            3.1998300000000004,
+            43.33676410439646,
+            1.741041712264775,
+            0.11481807795990395
+          ],
+          "nll": 108.10833754767921,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 22
+        },
+        {
+          "start": 14,
+          "x": [
+            2.3139751106615867,
+            3.1998300000000004,
+            43.336765282742746,
+            1.7410416668315567,
+            0.11481812797502289
+          ],
+          "nll": 108.10833754768775,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 22
+        },
+        {
+          "start": 9,
+          "x": [
+            2.3139745239765466,
+            3.1998300000000004,
+            43.33677154402568,
+            1.7410413632066652,
+            0.11481802901970806
+          ],
+          "nll": 108.10833754786204,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 19
+        },
+        {
+          "start": 13,
+          "x": [
+            0.20078000000000001,
+            3.1998300000000004,
+            43.35452039741935,
+            1.7486952416328232,
+            0.15560797674882854
+          ],
+          "nll": 119.41693420922553,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 31
+        },
+        {
+          "start": 7,
+          "x": [
+            2.2027687711366664,
+            3.1998300000000004,
+            64.9957,
+            1.6000400000000001,
+            0.09005959080723136
+          ],
+          "nll": 149.4727118935372,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 14
+        },
+        {
+          "start": 5,
+          "x": [
+            2.1193960958583467,
+            3.1998300000000004,
+            32.0324577412168,
+            1.6000400000000001,
+            0.08801764000478118
+          ],
+          "nll": 157.68369308246798,
+          "success": true,
+          "message": "CONVERGENCE: NORM_OF_PROJECTED_GRADIENT_<=_PGTOL",
+          "iterations": 21
+        },
+        {
+          "start": 15,
+          "x": [
+            2.183420808192166,
+            3.1998300000000004,
+            39.00106600845399,
+            1.6000400000000001,
+            0.08540800884532729
+          ],
+          "nll": 164.25915923092,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 18
+        },
+        {
+          "start": 12,
+          "x": [
+            5.042051924241303,
+            3.1998300000000004,
+            41.545472536123405,
+            1.794457566197308,
+            0.10639331322577317
+          ],
+          "nll": 166.348524161786,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 20
+        },
+        {
+          "start": 3,
+          "x": [
+            7.99922,
+            3.1998300000000004,
+            41.21686727761201,
+            1.7860340878666914,
+            0.10369751016040807
+          ],
+          "nll": 178.34396399031462,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 16
+        },
+        {
+          "start": 8,
+          "x": [
+            2.318571596427075,
+            3.1998300000000004,
+            64.9957,
+            1.8707990879052518,
+            0.1275413251833848
+          ],
+          "nll": 182.71083708233544,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 17
+        },
+        {
+          "start": 4,
+          "x": [
+            2.3862246785574617,
+            3.1998300000000004,
+            33.31509144012666,
+            1.9831128008971568,
+            0.0963397884062076
+          ],
+          "nll": 227.94032156292775,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 24
+        },
+        {
+          "start": 10,
+          "x": [
+            2.3862298805510664,
+            3.1998300000000004,
+            33.315120025006905,
+            1.98311137907856,
+            0.0963390751116775
+          ],
+          "nll": 227.94032156832048,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 24
+        }
+      ],
+      "inner_seconds": 1.4306249579967698,
+      "validation": {
+        "rmse": 0.12433805851792941,
+        "correlation": 0.4613259848139941
+      },
+      "full_candidates": [
+        {
+          "start": 12,
+          "x": [
+            2.2354303586328026,
+            3.1998300000000004,
+            54.877217847288776,
+            1.6001288575069277,
+            0.11717426974954948
+          ],
+          "nll": 94.36588910355971,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 31
+        },
+        {
+          "start": 0,
+          "x": [
+            2.235430519527506,
+            3.1998300000000004,
+            54.87721709036689,
+            1.6001288679839025,
+            0.11717426393797714
+          ],
+          "nll": 94.36588910356168,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 10
+        },
+        {
+          "start": 7,
+          "x": [
+            2.235430273887668,
+            3.1998300000000004,
+            54.87722051973703,
+            1.6001287484850197,
+            0.1171743119619525
+          ],
+          "nll": 94.36588910361269,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 24
+        },
+        {
+          "start": 1,
+          "x": [
+            2.2354311213429865,
+            3.1998300000000004,
+            54.87722415844479,
+            1.600128687578515,
+            0.11717414892777422
+          ],
+          "nll": 94.36588910374635,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 23
+        },
+        {
+          "start": 11,
+          "x": [
+            2.2354300552621815,
+            3.1998300000000004,
+            54.877196458862855,
+            1.600129691734381,
+            0.11717395385974183
+          ],
+          "nll": 94.36588910640675,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 20
+        },
+        {
+          "start": 2,
+          "x": [
+            2.2936234274892713,
+            3.1998300000000004,
+            43.654627687734326,
+            1.7322163111160183,
+            0.11478896456924392
+          ],
+          "nll": 116.69420134266532,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 23
+        },
+        {
+          "start": 9,
+          "x": [
+            2.2936149340772785,
+            3.1998300000000004,
+            43.65461889540091,
+            1.7322165880828377,
+            0.11478923786653905
+          ],
+          "nll": 116.69420134663228,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 19
+        },
+        {
+          "start": 6,
+          "x": [
+            0.20078000000000001,
+            3.1998300000000004,
+            61.86938320454274,
+            1.6000400000000001,
+            0.159523405028815
+          ],
+          "nll": 143.98125008257247,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 26
+        },
+        {
+          "start": 5,
+          "x": [
+            2.12265781235754,
+            3.1998300000000004,
+            31.957347366510273,
+            1.6000400000000001,
+            0.0938593785634172
+          ],
+          "nll": 152.5369018093878,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 17
+        },
+        {
+          "start": 4,
+          "x": [
+            2.1945670738480696,
+            3.1998300000000004,
+            39.38227579550246,
+            1.6000400000000001,
+            0.0928796565058092
+          ],
+          "nll": 156.06055480984378,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 21
+        },
+        {
+          "start": 15,
+          "x": [
+            2.194567260808826,
+            3.1998300000000004,
+            39.382274831293785,
+            1.6000400000000001,
+            0.09287965678698451
+          ],
+          "nll": 156.06055480987266,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 17
+        },
+        {
+          "start": 10,
+          "x": [
+            2.194567372415704,
+            3.1998300000000004,
+            39.38227607455164,
+            1.6000400000000001,
+            0.0928797907469252
+          ],
+          "nll": 156.06055480992197,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 21
+        },
+        {
+          "start": 13,
+          "x": [
+            0.20078000000000001,
+            3.1998300000000004,
+            64.9957,
+            1.6000400000000001,
+            0.15176820300418215
+          ],
+          "nll": 159.6653935336619,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 18
+        },
+        {
+          "start": 14,
+          "x": [
+            5.279902807749376,
+            3.1998300000000004,
+            41.777345357491214,
+            1.7867596833147945,
+            0.10608845500546449
+          ],
+          "nll": 180.55810749165792,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 21
+        },
+        {
+          "start": 8,
+          "x": [
+            2.3257777443082412,
+            3.1998300000000004,
+            64.9957,
+            1.8729726625922407,
+            0.1263168854404806
+          ],
+          "nll": 189.02099553131262,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 21
+        },
+        {
+          "start": 3,
+          "x": [
+            7.99922,
+            3.1998300000000004,
+            41.45789678663823,
+            1.771970526357868,
+            0.10086905897787102
+          ],
+          "nll": 192.51811455835917,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 17
+        }
+      ],
+      "full_seconds": 1.6171160840021912,
+      "selected": false,
+      "train": {
+        "rmse": 0.07519519309137271,
+        "correlation": 0.6075328719155442
+      },
+      "test": {
+        "rmse": 0.07562742938710508,
+        "correlation": 0.49897331610988005
+      }
+    },
+    {
+      "model": "layer3",
+      "covariance": "full",
+      "key": "layer3_full",
+      "names": [
+        "hs",
+        "Vs_s",
+        "H",
+        "crust_interface_fraction",
+        "Vs_c1",
+        "Vs_c2",
+        "kappa",
+        "P_time_shift_s"
+      ],
+      "bounds": [
+        [
+          0.05,
+          0.7,
+          15.0,
+          0.15,
+          2.7,
+          2.7,
+          1.55,
+          -0.6
+        ],
+        [
+          10.0,
+          3.5,
+          75.0,
+          0.85,
+          4.3,
+          4.3,
+          2.05,
+          0.6
+        ]
+      ],
+      "smooth": 1.0,
+      "fit_window_s": [
+        -0.6,
+        26.0
+      ],
+      "inner_candidates": [
+        {
+          "start": 0,
+          "x": [
+            2.3473011269261828,
+            3.49972,
+            49.779622273585936,
+            0.4663910060956703,
+            4.235746183714656,
+            4.29984,
+            1.7427480246562306,
+            0.1253865710673081
+          ],
+          "nll": 255.38999789408976,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 36
+        },
+        {
+          "start": 7,
+          "x": [
+            2.2581081378340224,
+            3.3622362544475823,
+            56.390985211469044,
+            0.7901526566960989,
+            3.881512289777976,
+            4.29984,
+            1.80301186690762,
+            0.13125834350850518
+          ],
+          "nll": 257.0374485861831,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 36
+        },
+        {
+          "start": 14,
+          "x": [
+            2.419626563778354,
+            3.49972,
+            15.521799150476783,
+            0.6786224336928794,
+            4.162532446338124,
+            4.29984,
+            2.04995,
+            0.12633974687402005
+          ],
+          "nll": 262.4068344494278,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 61
+        },
+        {
+          "start": 5,
+          "x": [
+            2.380107898066998,
+            3.49972,
+            58.21944204664285,
+            0.6092436326826882,
+            4.275648625625433,
+            4.234175029984132,
+            1.5998342763263322,
+            0.11649445474702758
+          ],
+          "nll": 269.47549801982274,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 41
+        },
+        {
+          "start": 1,
+          "x": [
+            2.266461789117047,
+            3.49972,
+            33.17260792327401,
+            0.17649108158263727,
+            4.158301597224046,
+            4.29984,
+            1.891493822362568,
+            0.1214522289284975
+          ],
+          "nll": 313.41995397288866,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 44
+        },
+        {
+          "start": 9,
+          "x": [
+            0.05755916453150121,
+            2.9750818465233726,
+            74.48069838987763,
+            0.6388532146850463,
+            4.19138202868961,
+            4.29984,
+            1.5741197301189196,
+            0.15258769045595721
+          ],
+          "nll": 336.4989394950934,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 51
+        },
+        {
+          "start": 15,
+          "x": [
+            6.260882884042371,
+            3.49972,
+            71.77085051622268,
+            0.6670641434389792,
+            3.702576180846828,
+            4.29984,
+            1.6091721874260791,
+            0.1464853204210299
+          ],
+          "nll": 361.03002728672124,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 26
+        },
+        {
+          "start": 13,
+          "x": [
+            6.118000180119306,
+            3.49972,
+            71.4771072549356,
+            0.38787026438246053,
+            3.8523388127099514,
+            4.29984,
+            1.5873833757719895,
+            0.14748956456013618
+          ],
+          "nll": 364.11301279844645,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 36
+        },
+        {
+          "start": 2,
+          "x": [
+            0.05327392260988742,
+            2.827647114000146,
+            51.14416351291625,
+            0.7931712340709202,
+            3.9850298615391204,
+            4.29984,
+            2.04995,
+            0.14769551823972193
+          ],
+          "nll": 378.7230716542033,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 50
+        },
+        {
+          "start": 8,
+          "x": [
+            6.261132431962965,
+            3.496178921905617,
+            74.994,
+            0.7385061760248168,
+            3.3771602828704825,
+            3.782690363237947,
+            2.04995,
+            0.14821878447260728
+          ],
+          "nll": 449.36337418769455,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 36
+        },
+        {
+          "start": 4,
+          "x": [
+            9.295550753126546,
+            3.49972,
+            42.85598113667427,
+            0.7474064198415821,
+            3.6173670794687194,
+            3.932504140457337,
+            1.7626081170551864,
+            0.13954290540100922
+          ],
+          "nll": 501.7031379958152,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 58
+        },
+        {
+          "start": 3,
+          "x": [
+            8.147705270175086,
+            3.49972,
+            64.21231733847685,
+            0.47258939557106106,
+            3.727149035045664,
+            4.29984,
+            1.8320282897203486,
+            0.129234773495423
+          ],
+          "nll": 505.94998858466096,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 37
+        },
+        {
+          "start": 6,
+          "x": [
+            9.999005,
+            3.49972,
+            28.30318832898807,
+            0.5736675960277406,
+            3.4990229674762747,
+            4.147503907970098,
+            1.84471668587953,
+            0.1293087259157475
+          ],
+          "nll": 506.5091517020108,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 51
+        },
+        {
+          "start": 12,
+          "x": [
+            8.90019849368314,
+            3.49972,
+            35.18726296217919,
+            0.15006999999999998,
+            3.6915034063889456,
+            4.212532912815263,
+            2.006434826670385,
+            0.1243072508899512
+          ],
+          "nll": 579.6640522079642,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 48
+        },
+        {
+          "start": 11,
+          "x": [
+            9.367500175502139,
+            3.49972,
+            21.02274130499832,
+            0.30132750835605615,
+            3.745690634374561,
+            4.291826362057748,
+            2.04995,
+            0.1244656162258766
+          ],
+          "nll": 594.9669035962473,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 43
+        },
+        {
+          "start": 10,
+          "x": [
+            0.050995000000000006,
+            2.7320121732634934,
+            74.994,
+            0.376977615682112,
+            3.115441933154976,
+            2.914248029973497,
+            2.04995,
+            0.11629865046692045
+          ],
+          "nll": 697.3454177680704,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 37
+        }
+      ],
+      "inner_seconds": 4.552800958001171,
+      "validation": {
+        "rmse": 0.1214775708934723,
+        "correlation": 0.49661169602725747
+      },
+      "full_candidates": [
+        {
+          "start": 12,
+          "x": [
+            0.06731957757523474,
+            2.565849174439954,
+            15.88466050941181,
+            0.15973139591773844,
+            3.527085711500466,
+            4.29984,
+            2.04995,
+            0.1205258226846515
+          ],
+          "nll": 229.36246943779886,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 58
+        },
+        {
+          "start": 0,
+          "x": [
+            2.376319836855539,
+            3.49972,
+            49.635427409355074,
+            0.42227502481012413,
+            4.181058392856646,
+            4.29984,
+            1.7412791345340513,
+            0.12665619702146946
+          ],
+          "nll": 235.9209103857848,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 30
+        },
+        {
+          "start": 1,
+          "x": [
+            2.410717056947043,
+            3.49972,
+            15.90094307544044,
+            0.2132065219433501,
+            4.29984,
+            4.29984,
+            2.04995,
+            0.11359375648395398
+          ],
+          "nll": 238.01382510887285,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 27
+        },
+        {
+          "start": 5,
+          "x": [
+            2.3550619200999487,
+            3.49972,
+            49.9949692401557,
+            0.6415764573930761,
+            4.266761817241014,
+            4.29984,
+            1.7398068403045732,
+            0.12209703329632993
+          ],
+          "nll": 240.84483134789434,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 39
+        },
+        {
+          "start": 13,
+          "x": [
+            2.4136043938427094,
+            3.49972,
+            74.994,
+            0.4016533616697866,
+            4.099984631947033,
+            4.230062425125235,
+            1.7822192601142506,
+            0.12028239898759474
+          ],
+          "nll": 280.76794926513963,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 40
+        },
+        {
+          "start": 2,
+          "x": [
+            0.05378165632345652,
+            2.852494423902235,
+            59.332489743551314,
+            0.6763877334276113,
+            3.9245731095947862,
+            4.29984,
+            2.0430973967921147,
+            0.14507018739161737
+          ],
+          "nll": 308.8949788768273,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 50
+        },
+        {
+          "start": 9,
+          "x": [
+            6.415948651051335,
+            3.49972,
+            74.994,
+            0.32671155187579615,
+            3.803182499269316,
+            4.277714793444196,
+            1.788928254198848,
+            0.14495954019655888
+          ],
+          "nll": 328.29811888867766,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 45
+        },
+        {
+          "start": 14,
+          "x": [
+            0.053975606765425795,
+            2.8036973980829094,
+            26.65670132688941,
+            0.27017053774368227,
+            3.983627815888859,
+            4.29984,
+            1.5500500000000001,
+            0.14311760217821112
+          ],
+          "nll": 358.4898156160874,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 59
+        },
+        {
+          "start": 7,
+          "x": [
+            6.201540857416132,
+            3.49972,
+            52.51410553857949,
+            0.8116183709300528,
+            3.7224448260332395,
+            4.29984,
+            1.8045251859393285,
+            0.13668906809437464
+          ],
+          "nll": 374.9307419800529,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 37
+        },
+        {
+          "start": 15,
+          "x": [
+            6.315540308587193,
+            3.49972,
+            74.85227855718271,
+            0.6838888301998146,
+            3.6205968364818,
+            4.149598001223229,
+            1.5500500000000001,
+            0.14023177392200403
+          ],
+          "nll": 379.6418927443815,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 19
+        },
+        {
+          "start": 10,
+          "x": [
+            0.050995000000000006,
+            2.943874140835174,
+            74.994,
+            0.18803612423653426,
+            3.70994957247913,
+            3.9120544076193466,
+            2.034598683974181,
+            0.14352630585249715
+          ],
+          "nll": 390.51896594929497,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 54
+        },
+        {
+          "start": 8,
+          "x": [
+            2.069154539912012,
+            3.104884017063161,
+            74.994,
+            0.6714107983731475,
+            3.437656592358202,
+            3.8039516913022413,
+            2.04995,
+            0.12854602362230438
+          ],
+          "nll": 395.1296270312714,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 33
+        },
+        {
+          "start": 6,
+          "x": [
+            8.388842332968139,
+            3.49972,
+            37.94331688376195,
+            0.8103137014231472,
+            3.68995766262355,
+            4.1447169390529455,
+            2.04995,
+            0.13107417438271018
+          ],
+          "nll": 487.26245101990185,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 41
+        },
+        {
+          "start": 4,
+          "x": [
+            9.999005,
+            3.49972,
+            30.468751743008358,
+            0.16823634483130046,
+            3.615998264063105,
+            4.242866246769831,
+            1.9160018713225762,
+            0.12687443626813322
+          ],
+          "nll": 568.8448691185063,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 35
+        },
+        {
+          "start": 3,
+          "x": [
+            9.781217122977813,
+            3.49972,
+            47.66394700756369,
+            0.4673719143731231,
+            3.63704905967439,
+            4.0179362716732445,
+            1.6960752466657425,
+            0.11426110370221465
+          ],
+          "nll": 569.9430124982517,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 31
+        },
+        {
+          "start": 11,
+          "x": [
+            9.661134039979933,
+            3.49972,
+            26.809052767517954,
+            0.20111238417408733,
+            3.656962582798221,
+            4.29984,
+            2.04995,
+            0.1185934057234792
+          ],
+          "nll": 586.5761550610868,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 49
+        }
+      ],
+      "full_seconds": 4.55822837499727,
+      "selected": false,
+      "train": {
+        "rmse": 0.06916472196663749,
+        "correlation": 0.6819357312697834
+      },
+      "test": {
+        "rmse": 0.0669296232847163,
+        "correlation": 0.589213862795187
+      }
+    },
+    {
+      "model": "layer3",
+      "covariance": "diagonal",
+      "key": "layer3_diagonal",
+      "names": [
+        "hs",
+        "Vs_s",
+        "H",
+        "crust_interface_fraction",
+        "Vs_c1",
+        "Vs_c2",
+        "kappa",
+        "P_time_shift_s"
+      ],
+      "bounds": [
+        [
+          0.05,
+          0.7,
+          15.0,
+          0.15,
+          2.7,
+          2.7,
+          1.55,
+          -0.6
+        ],
+        [
+          10.0,
+          3.5,
+          75.0,
+          0.85,
+          4.3,
+          4.3,
+          2.05,
+          0.6
+        ]
+      ],
+      "smooth": 1.0,
+      "fit_window_s": [
+        -0.6,
+        26.0
+      ],
+      "inner_candidates": [
+        {
+          "start": 0,
+          "x": [
+            2.494823284927432,
+            3.49972,
+            49.27929744208737,
+            0.5665215611818745,
+            4.294239623594722,
+            4.137867214173599,
+            1.744405630849687,
+            0.13033603127766402
+          ],
+          "nll": 77.02717333311165,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 42
+        },
+        {
+          "start": 7,
+          "x": [
+            2.166575824861515,
+            3.1073792782776586,
+            53.63778956853949,
+            0.8006308304516856,
+            3.73918475718244,
+            4.29984,
+            1.7672594361111282,
+            0.13342544448502147
+          ],
+          "nll": 77.11167363688735,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 39
+        },
+        {
+          "start": 11,
+          "x": [
+            2.421978191795545,
+            3.380040770530613,
+            15.681869014959501,
+            0.30357236345779237,
+            4.276827421352918,
+            4.29984,
+            1.8708351609630982,
+            0.12785567126834263
+          ],
+          "nll": 79.69893538883828,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 45
+        },
+        {
+          "start": 12,
+          "x": [
+            0.05654440044078131,
+            1.673162874582851,
+            15.611860693409893,
+            0.15006999999999998,
+            3.251202872861092,
+            4.29984,
+            1.8921723281271348,
+            0.11814158353078652
+          ],
+          "nll": 80.42734337399105,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 63
+        },
+        {
+          "start": 13,
+          "x": [
+            2.363632610539822,
+            3.3857708477706234,
+            56.644068340556366,
+            0.4693507809449582,
+            4.227561446573013,
+            4.1140728670045155,
+            1.6075120777486058,
+            0.12377403587794666
+          ],
+          "nll": 90.55669538102914,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 31
+        },
+        {
+          "start": 1,
+          "x": [
+            2.1885208814673227,
+            2.989088075584573,
+            41.63151378079442,
+            0.3109486150847214,
+            3.956847007803944,
+            4.29674694323151,
+            2.0175168464227187,
+            0.10574484242235438
+          ],
+          "nll": 91.17341742788659,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 52
+        },
+        {
+          "start": 5,
+          "x": [
+            0.050995000000000006,
+            2.7140525684407777,
+            54.91122002326869,
+            0.6964149965852293,
+            4.0043434078007225,
+            4.101712855187149,
+            1.6215463686440494,
+            0.18483838666352392
+          ],
+          "nll": 107.33643579038521,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 43
+        },
+        {
+          "start": 2,
+          "x": [
+            0.050995000000000006,
+            2.82208728361866,
+            56.984849628826694,
+            0.6695745730613755,
+            3.7549073557188937,
+            4.29984,
+            2.03242151531608,
+            0.18132297589817126
+          ],
+          "nll": 108.22371049166448,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 47
+        },
+        {
+          "start": 15,
+          "x": [
+            5.671546480431359,
+            3.49972,
+            70.45969146985406,
+            0.6549824465177646,
+            3.579518055727736,
+            4.29984,
+            1.6129118857381328,
+            0.16754755634079843
+          ],
+          "nll": 117.32926462779562,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 23
+        },
+        {
+          "start": 4,
+          "x": [
+            8.547401261808556,
+            3.49972,
+            41.879249026090704,
+            0.8220440092114089,
+            3.553163820747333,
+            4.006574206813484,
+            1.8402820607277963,
+            0.15410805359017632
+          ],
+          "nll": 118.99721935832898,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 55
+        },
+        {
+          "start": 8,
+          "x": [
+            2.3626073200450657,
+            3.3610451679708557,
+            74.994,
+            0.84993,
+            4.0342707884270315,
+            4.10068108092124,
+            1.8544560078331866,
+            0.13680572232079424
+          ],
+          "nll": 123.3577853893903,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 35
+        },
+        {
+          "start": 9,
+          "x": [
+            5.520418073974195,
+            3.49972,
+            44.65724171842047,
+            0.3092947264469963,
+            3.9470421687786383,
+            3.8398420492262417,
+            1.7805650632984589,
+            0.13074435773004678
+          ],
+          "nll": 129.32005816811127,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 29
+        },
+        {
+          "start": 10,
+          "x": [
+            0.050995000000000006,
+            2.960798323982452,
+            74.994,
+            0.2027278858546728,
+            4.085610034208644,
+            4.29984,
+            1.8895264830634249,
+            0.18377485927292514
+          ],
+          "nll": 133.65279155453933,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 53
+        },
+        {
+          "start": 14,
+          "x": [
+            2.590849215673954,
+            3.49972,
+            20.90302552085953,
+            0.21949505780033662,
+            4.22695321846037,
+            4.29984,
+            1.746020698130796,
+            0.11842834679564351
+          ],
+          "nll": 134.63685832749428,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 49
+        },
+        {
+          "start": 3,
+          "x": [
+            9.999005,
+            3.49972,
+            49.16139330560057,
+            0.22141411310753534,
+            3.574621909506109,
+            3.681178333447212,
+            1.608866648559459,
+            0.15038952477806944
+          ],
+          "nll": 137.39764946927824,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 36
+        },
+        {
+          "start": 6,
+          "x": [
+            0.09196404943047182,
+            2.9002301890315065,
+            20.873803785303608,
+            0.7190886882057066,
+            4.033544404657382,
+            4.29984,
+            1.867395076285869,
+            0.17087085273673708
+          ],
+          "nll": 145.8027948030953,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 56
+        }
+      ],
+      "inner_seconds": 4.406890416998067,
+      "validation": {
+        "rmse": 0.12083846499066705,
+        "correlation": 0.49556176137821817
+      },
+      "full_candidates": [
+        {
+          "start": 11,
+          "x": [
+            2.3356908220732953,
+            3.294793745655957,
+            15.657364192676978,
+            0.3091849495123734,
+            4.245187633893365,
+            4.29984,
+            1.8959456434341369,
+            0.12599268980804834
+          ],
+          "nll": 79.87884761503348,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 73
+        },
+        {
+          "start": 0,
+          "x": [
+            2.4279381063445533,
+            3.4555211381461763,
+            49.51603059075356,
+            0.5621683739729465,
+            4.29984,
+            4.1662030246981505,
+            1.7435022114463696,
+            0.12940419488162969
+          ],
+          "nll": 82.17277166123077,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 22
+        },
+        {
+          "start": 7,
+          "x": [
+            2.131813273656076,
+            3.0436630313233533,
+            72.65179952198159,
+            0.6885812692097689,
+            3.7757563962057503,
+            4.29984,
+            1.6149767765934426,
+            0.13474856127146917
+          ],
+          "nll": 84.60092694686475,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 43
+        },
+        {
+          "start": 2,
+          "x": [
+            2.167716912517829,
+            3.064985473323139,
+            56.596707213657474,
+            0.6574054884057302,
+            3.751877681607814,
+            4.29984,
+            2.0311156561768047,
+            0.1296638146185125
+          ],
+          "nll": 88.82343894321531,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 38
+        },
+        {
+          "start": 1,
+          "x": [
+            2.183072753993874,
+            2.991813985244475,
+            40.93421885873096,
+            0.3175308652129273,
+            3.979114743840797,
+            4.29984,
+            1.9967964207570537,
+            0.1072439405798854
+          ],
+          "nll": 94.29030517713728,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 38
+        },
+        {
+          "start": 14,
+          "x": [
+            2.539336446503351,
+            3.49972,
+            41.39667445637602,
+            0.2218075024686909,
+            4.29984,
+            4.188662391033862,
+            2.0057169970588067,
+            0.12535839718461073
+          ],
+          "nll": 99.64934487983146,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 62
+        },
+        {
+          "start": 12,
+          "x": [
+            0.05298109394816537,
+            3.0644539882997632,
+            48.959212134172,
+            0.4980163234601166,
+            4.195681367505274,
+            4.16070557202108,
+            1.7485220814135836,
+            0.1849464657890082
+          ],
+          "nll": 103.3428854071697,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 49
+        },
+        {
+          "start": 5,
+          "x": [
+            0.05301924546509995,
+            3.0653400957936903,
+            48.95931597217233,
+            0.49804236964582527,
+            4.19569433706805,
+            4.160705868791063,
+            1.748517474072016,
+            0.1849476895959692
+          ],
+          "nll": 103.3428854376941,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 54
+        },
+        {
+          "start": 13,
+          "x": [
+            0.050995000000000006,
+            2.745672454516895,
+            55.22784544659461,
+            0.5812085632316109,
+            4.0167309010129095,
+            4.125127323598464,
+            1.6176495641630755,
+            0.18163067954752465
+          ],
+          "nll": 111.90257429500912,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 48
+        },
+        {
+          "start": 15,
+          "x": [
+            5.859452057121883,
+            3.49972,
+            70.5089178522696,
+            0.6596232326169988,
+            3.6130951619116045,
+            4.29984,
+            1.6110174390049918,
+            0.16462845299631435
+          ],
+          "nll": 119.27208959481061,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 31
+        },
+        {
+          "start": 10,
+          "x": [
+            0.061393995663177374,
+            3.0293561088959775,
+            72.74776512210536,
+            0.25790628698132895,
+            4.29984,
+            4.2139644069984605,
+            1.5500500000000001,
+            0.1857862016900942
+          ],
+          "nll": 127.457299786811,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 53
+        },
+        {
+          "start": 8,
+          "x": [
+            0.05824098865834901,
+            2.9644157748934834,
+            73.13852577391802,
+            0.5585659417070759,
+            4.219738995479908,
+            4.29984,
+            1.5500500000000001,
+            0.18727896792149457
+          ],
+          "nll": 127.54785224039281,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 43
+        },
+        {
+          "start": 4,
+          "x": [
+            8.345372356412165,
+            3.49972,
+            42.26776055605451,
+            0.8218973083546685,
+            3.5942828749741995,
+            4.0536099965180385,
+            1.8229345029454207,
+            0.15112233915779805
+          ],
+          "nll": 128.3446789520961,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 60
+        },
+        {
+          "start": 6,
+          "x": [
+            5.3306786361323235,
+            3.49972,
+            15.006,
+            0.16406800466474508,
+            3.674765420828378,
+            4.29984,
+            2.04995,
+            0.13580335560559065
+          ],
+          "nll": 135.36338329458061,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 26
+        },
+        {
+          "start": 9,
+          "x": [
+            0.0828712545927083,
+            3.0365952905877442,
+            71.87894002468951,
+            0.4642312531818049,
+            4.19427086832532,
+            4.29984,
+            2.007467243007585,
+            0.17640223178601033
+          ],
+          "nll": 145.224752377927,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 40
+        },
+        {
+          "start": 3,
+          "x": [
+            6.419579658889274,
+            3.49972,
+            65.26739589483948,
+            0.3869218930111801,
+            3.795998189295887,
+            4.29984,
+            1.8357380745263965,
+            0.1483977579518324
+          ],
+          "nll": 158.3582782178723,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 33
+        }
+      ],
+      "full_seconds": 4.6751774580043275,
+      "selected": false,
+      "train": {
+        "rmse": 0.06739673819788443,
+        "correlation": 0.692424991083997
+      },
+      "test": {
+        "rmse": 0.06858041467104473,
+        "correlation": 0.585159451005305
+      }
+    },
+    {
+      "model": "layer5",
+      "covariance": "full",
+      "key": "layer5_full",
+      "names": [
+        "hs",
+        "Vs_s",
+        "H",
+        "crust_interface_fraction",
+        "Vs_c1",
+        "Vs_c2",
+        "Vs_c3",
+        "Vs_c4",
+        "kappa",
+        "P_time_shift_s"
+      ],
+      "bounds": [
+        [
+          0.05,
+          0.7,
+          15.0,
+          0.15,
+          2.7,
+          2.7,
+          2.7,
+          2.7,
+          1.55,
+          -0.6
+        ],
+        [
+          10.0,
+          3.5,
+          75.0,
+          0.85,
+          4.3,
+          4.3,
+          4.3,
+          4.3,
+          2.05,
+          0.6
+        ]
+      ],
+      "smooth": 1.0,
+      "fit_window_s": [
+        -0.6,
+        26.0
+      ],
+      "inner_candidates": [
+        {
+          "start": 6,
+          "x": [
+            2.2684304798236106,
+            3.368917942397913,
+            74.994,
+            0.5854084517081671,
+            3.8573911802154797,
+            3.8470613344859257,
+            4.29984,
+            4.29984,
+            1.7901504212080614,
+            0.13808204764241094
+          ],
+          "nll": 220.1539912346555,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 44
+        },
+        {
+          "start": 2,
+          "x": [
+            2.420431260753345,
+            3.4768712539652515,
+            49.21141357792104,
+            0.5127095150264076,
+            4.092960801048704,
+            4.296043495966014,
+            4.216760033209931,
+            4.29984,
+            1.7424567250234557,
+            0.13568397036153024
+          ],
+          "nll": 237.01699854045256,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 53
+        },
+        {
+          "start": 1,
+          "x": [
+            2.4203496615343774,
+            3.4767732754136933,
+            49.21127885763724,
+            0.5127044050963945,
+            4.092937311368936,
+            4.29603169996348,
+            4.2167826043835905,
+            4.29984,
+            1.7424539831106036,
+            0.13567736824181165
+          ],
+          "nll": 237.01699988341355,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 55
+        },
+        {
+          "start": 3,
+          "x": [
+            2.3275256042020347,
+            3.4478006186367045,
+            56.39498708108006,
+            0.5880423419028656,
+            3.982179126241099,
+            3.8154813962761516,
+            3.8702982921434987,
+            4.29984,
+            1.7967242809888653,
+            0.13172943812519922
+          ],
+          "nll": 248.03873595813081,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 45
+        },
+        {
+          "start": 13,
+          "x": [
+            2.350595665053252,
+            3.4812102827003972,
+            55.64305257931789,
+            0.8132604252186832,
+            3.94584607941875,
+            3.9210374757140363,
+            4.29984,
+            4.29984,
+            1.8066811844961148,
+            0.13416887394536292
+          ],
+          "nll": 258.66945558587975,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 54
+        },
+        {
+          "start": 15,
+          "x": [
+            0.08068425402311871,
+            2.631464631156219,
+            15.81619986947043,
+            0.16316897453087342,
+            3.5400208349189235,
+            3.6138179217485153,
+            4.29984,
+            4.29984,
+            2.04995,
+            0.12446559126961687
+          ],
+          "nll": 267.98693004995744,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 61
+        },
+        {
+          "start": 0,
+          "x": [
+            2.421837065093863,
+            3.49972,
+            58.428710410246445,
+            0.43469698182612704,
+            3.9912598480509516,
+            4.0785718395732395,
+            3.9396240369464435,
+            4.29984,
+            1.9213581928686787,
+            0.1333523887089928
+          ],
+          "nll": 277.20400198717425,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 36
+        },
+        {
+          "start": 9,
+          "x": [
+            2.452669526468423,
+            3.49972,
+            40.02217438643591,
+            0.2213837251154407,
+            4.172956483186547,
+            4.275248168060497,
+            4.2227754456869775,
+            4.29984,
+            1.7768318905294354,
+            0.1091468090251182
+          ],
+          "nll": 336.458875195363,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 56
+        },
+        {
+          "start": 8,
+          "x": [
+            7.06488752598505,
+            3.49972,
+            43.887949785525684,
+            0.693505962604786,
+            3.5633454207672033,
+            3.721805543901985,
+            4.172990394058939,
+            4.29984,
+            1.7204990163071803,
+            0.15340202093746247
+          ],
+          "nll": 359.467139914308,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 55
+        },
+        {
+          "start": 4,
+          "x": [
+            0.6982508471126683,
+            3.49972,
+            26.593891791988526,
+            0.15006999999999998,
+            3.647488069824321,
+            4.29984,
+            4.290417853736034,
+            4.29984,
+            2.04995,
+            0.11288386985539756
+          ],
+          "nll": 368.8126692905779,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 47
+        },
+        {
+          "start": 14,
+          "x": [
+            0.6982775889735259,
+            3.49972,
+            26.593799548994845,
+            0.15006999999999998,
+            3.6474828111557454,
+            4.29984,
+            4.2904025929551874,
+            4.29984,
+            2.04995,
+            0.11288425461858642
+          ],
+          "nll": 368.8126695935738,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 44
+        },
+        {
+          "start": 11,
+          "x": [
+            9.999005,
+            3.49972,
+            29.170819557502938,
+            0.16366282457401246,
+            3.3597017964780154,
+            3.4887152560475383,
+            3.816422742759298,
+            4.29984,
+            1.8231175867358802,
+            0.13452725382667474
+          ],
+          "nll": 442.95332355184456,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 45
+        },
+        {
+          "start": 5,
+          "x": [
+            9.121997037770134,
+            3.49972,
+            29.213225193347846,
+            0.3894250771997715,
+            3.364767251584414,
+            3.6743775650289274,
+            4.015682254522186,
+            4.29984,
+            1.9764230407923082,
+            0.14035996920570304
+          ],
+          "nll": 466.6645772533597,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 49
+        },
+        {
+          "start": 12,
+          "x": [
+            9.999005,
+            3.49972,
+            34.233962168834864,
+            0.6889751874087534,
+            3.212126893649444,
+            3.5261053327875214,
+            3.9109086010244125,
+            4.29984,
+            2.026811529551322,
+            0.13007608800242898
+          ],
+          "nll": 478.4410869038893,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 44
+        },
+        {
+          "start": 10,
+          "x": [
+            0.7253581106511691,
+            3.49972,
+            74.994,
+            0.84993,
+            2.7855307625311565,
+            2.8828741274030176,
+            3.305226753518743,
+            3.721617809674296,
+            2.0006215089980235,
+            0.1621063827527366
+          ],
+          "nll": 483.68493621210337,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 39
+        },
+        {
+          "start": 7,
+          "x": [
+            6.679334185476605,
+            3.49972,
+            19.841095697217074,
+            0.559531386868562,
+            3.5892039306955477,
+            3.633330473480549,
+            4.139071085370785,
+            4.29984,
+            2.04995,
+            0.13216138796924826
+          ],
+          "nll": 489.41969630396864,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 49
+        }
+      ],
+      "inner_seconds": 7.515334333002102,
+      "validation": {
+        "rmse": 0.12204637823623063,
+        "correlation": 0.5243020987240884
+      },
+      "full_candidates": [
+        {
+          "start": 0,
+          "x": [
+            2.321534633815881,
+            3.3944236968494614,
+            74.994,
+            0.5960695949106923,
+            3.917336688251151,
+            3.883536226854127,
+            4.29984,
+            4.29984,
+            1.7832751750395401,
+            0.13150057045943997
+          ],
+          "nll": 204.1655621887244,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 24
+        },
+        {
+          "start": 4,
+          "x": [
+            1.499084269517229,
+            3.49972,
+            15.765136973790511,
+            0.15006999999999998,
+            3.4081162501789857,
+            4.198812220617609,
+            4.29984,
+            4.29984,
+            2.04995,
+            0.11637732271795553
+          ],
+          "nll": 223.81146365656625,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 41
+        },
+        {
+          "start": 15,
+          "x": [
+            0.33430573565372007,
+            3.403753110535521,
+            15.852425971096586,
+            0.15006999999999998,
+            3.4102535736669433,
+            3.587524140022669,
+            4.29984,
+            4.29984,
+            2.04995,
+            0.11586273380735701
+          ],
+          "nll": 232.22217859501865,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 67
+        },
+        {
+          "start": 3,
+          "x": [
+            2.3355159311830165,
+            3.433978014141964,
+            56.6596051018032,
+            0.5921787683595228,
+            3.987970633942532,
+            3.845254642831574,
+            3.887130330326911,
+            4.29984,
+            1.7894950734785746,
+            0.1281422903804028
+          ],
+          "nll": 246.65113767324314,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 44
+        },
+        {
+          "start": 6,
+          "x": [
+            0.050995000000000006,
+            3.1020676580838167,
+            74.994,
+            0.1705325084990922,
+            3.591585769711731,
+            3.850339703241273,
+            3.736298077024972,
+            4.29984,
+            1.779893166774427,
+            0.1573903765340241
+          ],
+          "nll": 248.14128493242288,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 80
+        },
+        {
+          "start": 2,
+          "x": [
+            2.3843781254279834,
+            3.49972,
+            42.830611288928125,
+            0.43064197538655546,
+            4.214548679773676,
+            4.117230787230618,
+            4.219539800856195,
+            4.292812417993424,
+            2.0132083271176953,
+            0.11268610700387949
+          ],
+          "nll": 254.19043175727603,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 62
+        },
+        {
+          "start": 9,
+          "x": [
+            2.4096414227207443,
+            3.49972,
+            41.64211130269885,
+            0.4135420413670353,
+            4.224394470498949,
+            4.165045470743872,
+            4.2669120218613825,
+            4.29984,
+            2.0460121979539414,
+            0.11811953330504321
+          ],
+          "nll": 285.3864858150914,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 87
+        },
+        {
+          "start": 13,
+          "x": [
+            2.2932681051566313,
+            3.3915553345406604,
+            51.74118508715599,
+            0.7206643528752137,
+            3.885896769617831,
+            3.8785047570674305,
+            3.969426611246158,
+            4.29984,
+            1.869226778541901,
+            0.10810810661855597
+          ],
+          "nll": 318.30744648908717,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 65
+        },
+        {
+          "start": 14,
+          "x": [
+            0.07561458000982274,
+            2.3024172435773247,
+            22.862488114176433,
+            0.19753957462012836,
+            3.3813688260979307,
+            4.29984,
+            4.288556935606881,
+            4.29984,
+            1.7057004943980307,
+            0.09866067982621807
+          ],
+          "nll": 319.7452457223559,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 84
+        },
+        {
+          "start": 1,
+          "x": [
+            2.5914526527210353,
+            3.49972,
+            37.33388142109797,
+            0.35051777649202287,
+            4.232022522305442,
+            4.070525095579812,
+            4.29984,
+            4.29984,
+            1.8772595549185584,
+            0.10636617903267875
+          ],
+          "nll": 336.00968017768923,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 50
+        },
+        {
+          "start": 7,
+          "x": [
+            6.75034706468455,
+            3.49972,
+            43.80327684814977,
+            0.7127772891151466,
+            3.623815810973274,
+            3.7567348078287592,
+            4.161503025807818,
+            4.29984,
+            1.6578491797168116,
+            0.1468412906709191
+          ],
+          "nll": 347.7118241878149,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 95
+        },
+        {
+          "start": 11,
+          "x": [
+            6.703019961672233,
+            3.49972,
+            46.23656621412863,
+            0.316411547276245,
+            3.68672823315535,
+            3.790846021272942,
+            4.020453584041592,
+            4.29984,
+            1.7246345609495524,
+            0.1455612305517694
+          ],
+          "nll": 366.788623589594,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 40
+        },
+        {
+          "start": 5,
+          "x": [
+            9.999005,
+            3.49972,
+            35.588438292548204,
+            0.3966429384498343,
+            3.3042677580986286,
+            3.541931107279665,
+            3.9674182843837187,
+            4.29984,
+            1.8781413882431328,
+            0.12683269229248195
+          ],
+          "nll": 463.0034224697876,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 38
+        },
+        {
+          "start": 8,
+          "x": [
+            9.57043534962775,
+            3.49972,
+            22.760842794754407,
+            0.5044797385329209,
+            3.311656727646955,
+            3.5622489504950337,
+            3.977918872014504,
+            4.29984,
+            2.04995,
+            0.1368032105183108
+          ],
+          "nll": 468.3460506762308,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 66
+        },
+        {
+          "start": 10,
+          "x": [
+            0.7880608444787488,
+            3.49972,
+            74.994,
+            0.84993,
+            2.786099241036386,
+            2.864562975275356,
+            3.34217023315188,
+            3.8368851256571768,
+            2.0177910438732165,
+            0.16112167717087256
+          ],
+          "nll": 505.3728076839394,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 41
+        },
+        {
+          "start": 12,
+          "x": [
+            9.999005,
+            1.0647583082820407,
+            33.07440316042597,
+            0.36096861241334555,
+            2.7001600000000003,
+            3.2870447947797348,
+            3.9140700524016117,
+            4.042038882666305,
+            1.814016604869595,
+            0.0253343925671482
+          ],
+          "nll": 11371.726044784426,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 44
+        }
+      ],
+      "full_seconds": 9.043434499995783,
+      "selected": false,
+      "train": {
+        "rmse": 0.07203762219669807,
+        "correlation": 0.6697518703068376
+      },
+      "test": {
+        "rmse": 0.06768805075340913,
+        "correlation": 0.5768540573637175
+      }
+    },
+    {
+      "model": "layer5",
+      "covariance": "diagonal",
+      "key": "layer5_diagonal",
+      "names": [
+        "hs",
+        "Vs_s",
+        "H",
+        "crust_interface_fraction",
+        "Vs_c1",
+        "Vs_c2",
+        "Vs_c3",
+        "Vs_c4",
+        "kappa",
+        "P_time_shift_s"
+      ],
+      "bounds": [
+        [
+          0.05,
+          0.7,
+          15.0,
+          0.15,
+          2.7,
+          2.7,
+          2.7,
+          2.7,
+          1.55,
+          -0.6
+        ],
+        [
+          10.0,
+          3.5,
+          75.0,
+          0.85,
+          4.3,
+          4.3,
+          4.3,
+          4.3,
+          2.05,
+          0.6
+        ]
+      ],
+      "smooth": 1.0,
+      "fit_window_s": [
+        -0.6,
+        26.0
+      ],
+      "inner_candidates": [
+        {
+          "start": 2,
+          "x": [
+            2.070817361747708,
+            2.932599620142299,
+            47.608365680759874,
+            0.5137418672491008,
+            3.863645497386166,
+            4.198349121112457,
+            4.120581300479963,
+            4.282742061854698,
+            1.7399257738041454,
+            0.11498342549617202
+          ],
+          "nll": 68.31056233417141,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 54
+        },
+        {
+          "start": 0,
+          "x": [
+            2.0708719556040176,
+            2.9326651566126625,
+            47.60820741649007,
+            0.5137438322320205,
+            3.8636539304298347,
+            4.198328699380312,
+            4.120553199230873,
+            4.282722573614903,
+            1.7399231644620234,
+            0.11498984808384338
+          ],
+          "nll": 68.31056243757818,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 44
+        },
+        {
+          "start": 3,
+          "x": [
+            2.127916042850709,
+            3.134176567687546,
+            52.75618637986009,
+            0.5943932063311411,
+            3.7036033723827377,
+            3.5731451553851024,
+            3.717639400453809,
+            4.29984,
+            1.776451780868935,
+            0.138825842652315
+          ],
+          "nll": 73.73971395539209,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 43
+        },
+        {
+          "start": 13,
+          "x": [
+            1.1295833202259957,
+            3.396475469325069,
+            15.68996945910972,
+            0.15006999999999998,
+            3.164119926728357,
+            3.981761086163437,
+            4.29984,
+            4.29984,
+            1.9198479666036792,
+            0.1230829610786347
+          ],
+          "nll": 82.82388380394816,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 60
+        },
+        {
+          "start": 4,
+          "x": [
+            1.1296128880967606,
+            3.3965074754406634,
+            15.689975958489441,
+            0.15006999999999998,
+            3.164133773551435,
+            3.981769393705898,
+            4.29984,
+            4.29984,
+            1.9198569834504213,
+            0.12308573851509697
+          ],
+          "nll": 82.8238838135548,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 65
+        },
+        {
+          "start": 15,
+          "x": [
+            1.1307309686825746,
+            3.399176360620717,
+            15.69068052833565,
+            0.15006999999999998,
+            3.16477772119317,
+            3.9821814344253097,
+            4.29984,
+            4.29984,
+            1.9201250843267104,
+            0.12326200012799804
+          ],
+          "nll": 82.82390232143587,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 50
+        },
+        {
+          "start": 6,
+          "x": [
+            0.050995000000000006,
+            3.1581575258244143,
+            74.994,
+            0.5708379677290455,
+            3.708097622137891,
+            3.658498038110417,
+            4.29984,
+            4.29984,
+            1.8017605712285145,
+            0.1924307676691932
+          ],
+          "nll": 89.61262706478978,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 53
+        },
+        {
+          "start": 14,
+          "x": [
+            2.5211667293763287,
+            3.476648140920883,
+            41.987241080091266,
+            0.2160109172761637,
+            4.263937814307718,
+            4.29984,
+            4.160435326411438,
+            4.16018598364162,
+            2.0256121869293784,
+            0.12262923355518585
+          ],
+          "nll": 96.14154930396721,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 62
+        },
+        {
+          "start": 9,
+          "x": [
+            0.050995000000000006,
+            2.542528486143643,
+            54.88306550790125,
+            0.22806095305216206,
+            3.690865630395744,
+            3.9392941452031978,
+            4.039228319977976,
+            4.166410023309718,
+            1.6227404223713788,
+            0.17483440609205148
+          ],
+          "nll": 103.3728260177458,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 61
+        },
+        {
+          "start": 1,
+          "x": [
+            2.538000785155036,
+            3.229978522766107,
+            31.731728636192756,
+            0.419335054564668,
+            4.084881406940937,
+            3.805058945024382,
+            4.176504798738185,
+            4.29984,
+            1.901104067046335,
+            0.11688343633005327
+          ],
+          "nll": 112.4259618939737,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 60
+        },
+        {
+          "start": 10,
+          "x": [
+            2.30095223550933,
+            3.2692423853367956,
+            74.994,
+            0.7571247399300232,
+            3.884153906629648,
+            4.082933006946363,
+            4.256714585106651,
+            4.290029195856826,
+            1.8511837619303582,
+            0.1422777062168239
+          ],
+          "nll": 115.41641416489303,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 39
+        },
+        {
+          "start": 8,
+          "x": [
+            9.068007024163125,
+            3.49972,
+            74.42198836743867,
+            0.802490702626552,
+            3.504542219609793,
+            4.29984,
+            4.229345374920141,
+            4.29897951052912,
+            2.04995,
+            0.17799738765690498
+          ],
+          "nll": 118.67754759889425,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 50
+        },
+        {
+          "start": 7,
+          "x": [
+            6.498329861496422,
+            3.49972,
+            38.10462185696821,
+            0.6636075367553536,
+            3.7368486013166304,
+            3.5653461677691403,
+            4.103828024858539,
+            4.1817284908646535,
+            1.9768478425777114,
+            0.16146799600322614
+          ],
+          "nll": 123.63616470035258,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 52
+        },
+        {
+          "start": 12,
+          "x": [
+            9.999005,
+            3.49972,
+            35.54097361783985,
+            0.6033048117215712,
+            3.1623085445395587,
+            3.377902985844628,
+            3.8144796404393864,
+            3.9853062630484137,
+            2.04995,
+            0.15903468258409537
+          ],
+          "nll": 148.70193267719804,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 56
+        },
+        {
+          "start": 11,
+          "x": [
+            5.43096025836273,
+            3.49972,
+            30.373287825761203,
+            0.6543681040581805,
+            3.7322184611951865,
+            3.8589028019780103,
+            4.283525336577296,
+            4.29984,
+            1.992622186874006,
+            0.1553887628159204
+          ],
+          "nll": 151.00296520053558,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 79
+        },
+        {
+          "start": 5,
+          "x": [
+            5.999812137745308,
+            3.49972,
+            19.50108755112713,
+            0.5373273898920474,
+            3.7238018852098076,
+            3.7153356188803786,
+            4.29984,
+            4.29984,
+            2.04995,
+            0.14057464454318436
+          ],
+          "nll": 169.52430283756325,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 37
+        }
+      ],
+      "inner_seconds": 8.249875709007028,
+      "validation": {
+        "rmse": 0.11612302237748903,
+        "correlation": 0.5624464461754332
+      },
+      "full_candidates": [
+        {
+          "start": 0,
+          "x": [
+            1.9768431787681569,
+            2.8426005186158694,
+            48.125058258334235,
+            0.5120749396257925,
+            3.9028650178354045,
+            4.231249732554824,
+            4.160566082203161,
+            4.29984,
+            1.7452286171398472,
+            0.10741649177846502
+          ],
+          "nll": 73.41620186313946,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 35
+        },
+        {
+          "start": 2,
+          "x": [
+            1.9768545813825493,
+            2.8426163218974434,
+            48.12513331113874,
+            0.5120734410664938,
+            3.9028747451346257,
+            4.231252206122461,
+            4.160572602292474,
+            4.29984,
+            1.7452322494070083,
+            0.10741684488716818
+          ],
+          "nll": 73.41620186410388,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 48
+        },
+        {
+          "start": 4,
+          "x": [
+            2.195876850923702,
+            3.1654110635341635,
+            15.458588983577679,
+            0.42511974817804465,
+            4.29984,
+            4.161424768430444,
+            4.150774679927238,
+            4.29984,
+            1.8555654215782456,
+            0.12119024058742611
+          ],
+          "nll": 79.71510803060093,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 84
+        },
+        {
+          "start": 3,
+          "x": [
+            2.0907160056526326,
+            3.062551427372223,
+            53.0456291481996,
+            0.5981398003791315,
+            3.702304845612772,
+            3.6364657637547766,
+            3.7673265272580903,
+            4.29984,
+            1.7763268383439208,
+            0.1334870306157061
+          ],
+          "nll": 80.89375796171191,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 51
+        },
+        {
+          "start": 13,
+          "x": [
+            0.967704961583851,
+            3.450552066727739,
+            15.771123470145369,
+            0.15006999999999998,
+            3.0593772543339495,
+            3.9124236402770087,
+            4.29984,
+            4.29984,
+            1.9680569570144915,
+            0.1273250470325985
+          ],
+          "nll": 81.82495525234125,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 65
+        },
+        {
+          "start": 5,
+          "x": [
+            0.9677216267068528,
+            3.4505171118635483,
+            15.771112152155627,
+            0.15006999999999998,
+            3.0593845698895983,
+            3.9124361551240723,
+            4.29984,
+            4.29984,
+            1.9680501867252915,
+            0.12732473936082256
+          ],
+          "nll": 81.82495526416953,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 59
+        },
+        {
+          "start": 15,
+          "x": [
+            0.9677238012001756,
+            3.4505643538692103,
+            15.771158186420191,
+            0.15006999999999998,
+            3.059401695913689,
+            3.912419792015393,
+            4.29984,
+            4.29984,
+            1.9680747975848603,
+            0.12732673356658908
+          ],
+          "nll": 81.82495528357863,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 71
+        },
+        {
+          "start": 14,
+          "x": [
+            2.501523576269751,
+            3.4616430314915627,
+            49.07143480889451,
+            0.1754811966015335,
+            4.20620480090261,
+            4.29984,
+            4.217002402671422,
+            4.175552273667161,
+            1.7460471030301212,
+            0.1325370613551029
+          ],
+          "nll": 82.83108142181244,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 59
+        },
+        {
+          "start": 10,
+          "x": [
+            2.005742576407203,
+            2.82082351512072,
+            74.994,
+            0.84993,
+            3.3992812590643746,
+            4.043210734072343,
+            4.215336046393992,
+            4.27281757921277,
+            2.04995,
+            0.13758023230831284
+          ],
+          "nll": 93.60235837988975,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 38
+        },
+        {
+          "start": 6,
+          "x": [
+            0.050995000000000006,
+            3.10216155683524,
+            74.994,
+            0.5771747858153391,
+            3.7394379662723827,
+            3.7021427918677228,
+            4.29984,
+            4.29984,
+            1.7991594199166696,
+            0.1901027319804296
+          ],
+          "nll": 97.42405727883991,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 54
+        },
+        {
+          "start": 9,
+          "x": [
+            0.050995000000000006,
+            2.860488314581745,
+            47.96191662052694,
+            0.27308421312893993,
+            3.829936513624501,
+            4.117848952261532,
+            4.075707459690866,
+            4.209603154913349,
+            1.7517611476749113,
+            0.17854528779469558
+          ],
+          "nll": 98.66399277055739,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 65
+        },
+        {
+          "start": 1,
+          "x": [
+            2.5075631624878265,
+            3.2317745305982433,
+            31.675206196185208,
+            0.4225216292052395,
+            4.069578817620064,
+            3.827167469651733,
+            4.165714147548081,
+            4.29984,
+            1.8904280027341762,
+            0.12046360405335432
+          ],
+          "nll": 114.34823177574168,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 48
+        },
+        {
+          "start": 8,
+          "x": [
+            8.692745987322054,
+            3.49972,
+            74.994,
+            0.786253030869515,
+            3.5462761948478443,
+            4.28673832154808,
+            4.2115807319288905,
+            4.284696660469915,
+            2.04995,
+            0.17485928679284912
+          ],
+          "nll": 124.87940359867376,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 30
+        },
+        {
+          "start": 7,
+          "x": [
+            6.270766154333339,
+            3.49972,
+            37.88230387160369,
+            0.6767787672335206,
+            3.841028162515957,
+            3.684429651869926,
+            4.195127149747776,
+            4.29984,
+            1.8897625356583756,
+            0.15912450994262906
+          ],
+          "nll": 128.5725382930195,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 42
+        },
+        {
+          "start": 12,
+          "x": [
+            9.999005,
+            3.49972,
+            35.81498538805021,
+            0.5960789092239523,
+            3.1793043560236587,
+            3.4281667080946168,
+            3.8345108183640937,
+            4.0158893200082995,
+            2.04995,
+            0.15692800883352565
+          ],
+          "nll": 154.02933481157635,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 40
+        },
+        {
+          "start": 11,
+          "x": [
+            9.999005,
+            3.49972,
+            29.25787996899256,
+            0.15006999999999998,
+            3.1925269311962734,
+            3.4168606609061647,
+            3.8150255447070944,
+            4.260765924490284,
+            1.922661501557804,
+            0.15193623117687127
+          ],
+          "nll": 165.86200167764076,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 44
+        }
+      ],
+      "full_seconds": 7.826564624992898,
+      "selected": true,
+      "train": {
+        "rmse": 0.06402124854430682,
+        "correlation": 0.7312989077462889
+      },
+      "test": {
+        "rmse": 0.06631911150177316,
+        "correlation": 0.6323730134715727
+      }
+    },
+    {
+      "model": "flex5",
+      "covariance": "full",
+      "key": "flex5_full",
+      "names": [
+        "hs",
+        "Vs_s",
+        "H",
+        "crust_thickness_logratio_1",
+        "crust_thickness_logratio_2",
+        "crust_thickness_logratio_3",
+        "Vs_c1",
+        "Vs_c2",
+        "Vs_c3",
+        "Vs_c4",
+        "kappa",
+        "P_time_shift_s"
+      ],
+      "bounds": [
+        [
+          0.05,
+          0.7,
+          15.0,
+          -2.5,
+          -2.5,
+          -2.5,
+          2.7,
+          2.7,
+          2.7,
+          2.7,
+          1.55,
+          -0.6
+        ],
+        [
+          10.0,
+          3.5,
+          75.0,
+          2.5,
+          2.5,
+          2.5,
+          4.3,
+          4.3,
+          4.3,
+          4.3,
+          2.05,
+          0.6
+        ]
+      ],
+      "smooth": 1.0,
+      "fit_window_s": [
+        -0.6,
+        26.0
+      ],
+      "inner_candidates": [
+        {
+          "start": 2,
+          "x": [
+            2.4276953314635934,
+            3.49972,
+            49.26005112835722,
+            0.03780800035840759,
+            0.3043872098341809,
+            -0.49580764497228547,
+            4.1137730424262955,
+            4.29984,
+            4.166749029070634,
+            4.29984,
+            1.7430148540276311,
+            0.13475281135012862
+          ],
+          "nll": 229.1192781091236,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 59
+        },
+        {
+          "start": 3,
+          "x": [
+            2.2250815946514777,
+            3.2883118753845606,
+            57.03679174145565,
+            -0.04509814661128475,
+            -0.43465481392736827,
+            0.7173743678019884,
+            4.01811444017233,
+            4.245332619278753,
+            4.193340246428098,
+            4.29984,
+            1.6019713111625953,
+            0.11861915772087661
+          ],
+          "nll": 251.1027689249771,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 49
+        },
+        {
+          "start": 0,
+          "x": [
+            2.389921261739212,
+            3.49972,
+            57.372281403662875,
+            -0.07907006886422563,
+            -0.10640958610797524,
+            -0.326449017655841,
+            3.9602161356576877,
+            3.857631054166374,
+            3.9813878632560167,
+            4.29984,
+            1.9043720469988188,
+            0.13601023581932126
+          ],
+          "nll": 274.21668194657093,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 44
+        },
+        {
+          "start": 9,
+          "x": [
+            2.458015534348596,
+            3.49972,
+            57.21768814967765,
+            -1.0818991042137072,
+            0.37780353023531843,
+            -0.32165914252371763,
+            3.983699700690969,
+            3.857242504455034,
+            3.9764269539076897,
+            4.29984,
+            1.9053392424433933,
+            0.13496995088187735
+          ],
+          "nll": 274.69499367143044,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 73
+        },
+        {
+          "start": 13,
+          "x": [
+            2.356883204188965,
+            3.460338708655006,
+            74.994,
+            2.4995000000000003,
+            -0.4581474999603987,
+            0.022061162796097378,
+            3.9509618776232793,
+            4.138557545195228,
+            4.0361054947204185,
+            4.221740454387904,
+            1.8636507815546712,
+            0.13230490558574526
+          ],
+          "nll": 286.49383219714184,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 59
+        },
+        {
+          "start": 6,
+          "x": [
+            2.2471345068055064,
+            3.2996773804623993,
+            74.994,
+            0.6223614916557563,
+            1.6568000737583084,
+            -0.682379998411945,
+            3.7429625272484714,
+            3.846859401368457,
+            3.978748643932067,
+            4.23308479603199,
+            2.04995,
+            0.13193814410284033
+          ],
+          "nll": 305.39795737559854,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 65
+        },
+        {
+          "start": 1,
+          "x": [
+            2.317457553957014,
+            3.2687899449127693,
+            33.97574979321419,
+            -0.27287400481039636,
+            -0.36085537591499284,
+            0.48321541585783656,
+            4.150525637457963,
+            3.8426952167344433,
+            4.121512019157869,
+            4.29984,
+            1.6203338634424418,
+            0.10381428274054427
+          ],
+          "nll": 312.3763094621027,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 83
+        },
+        {
+          "start": 11,
+          "x": [
+            6.496227875898682,
+            3.49972,
+            53.48865097347771,
+            0.5223032669974881,
+            -0.8166421206148158,
+            0.4559447912659236,
+            3.699051178162335,
+            3.5723993401362577,
+            3.930355869688318,
+            4.29984,
+            1.8352903380710408,
+            0.14603981260541554
+          ],
+          "nll": 318.92062132343443,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 72
+        },
+        {
+          "start": 7,
+          "x": [
+            2.618802003198663,
+            3.49972,
+            38.9951407049996,
+            -0.16591509718761932,
+            -0.2143569437244386,
+            1.9177516098879925,
+            4.082501331340849,
+            4.29984,
+            4.0973389279268915,
+            4.29984,
+            1.767123789730339,
+            0.11428134798119438
+          ],
+          "nll": 331.53214902846685,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 60
+        },
+        {
+          "start": 8,
+          "x": [
+            5.992947116289299,
+            3.49972,
+            51.15206030569283,
+            1.3063378810929862,
+            0.517353286979894,
+            -0.48714166506333756,
+            3.6682611254145296,
+            3.9329889956885955,
+            4.110423303018229,
+            4.29203914277493,
+            1.6492168321003406,
+            0.14633835198984824
+          ],
+          "nll": 345.82212202468236,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 64
+        },
+        {
+          "start": 15,
+          "x": [
+            6.310473024962014,
+            3.49972,
+            46.09910614746262,
+            1.2093273149637538,
+            1.1337539043154887,
+            1.3347642769801538,
+            3.743862359348951,
+            3.853408364245919,
+            4.241761891582173,
+            4.29984,
+            1.7624085796874598,
+            0.1515613237368929
+          ],
+          "nll": 351.02886681249225,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 80
+        },
+        {
+          "start": 12,
+          "x": [
+            5.711698236256031,
+            3.49972,
+            74.994,
+            -2.0560003421446242,
+            -1.6518650069604472,
+            -1.3007731409867198,
+            3.594970112151625,
+            3.786566919906726,
+            4.022151918241841,
+            4.220749726498392,
+            1.8605668715769377,
+            0.14862251197469056
+          ],
+          "nll": 357.39611289717635,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 45
+        },
+        {
+          "start": 10,
+          "x": [
+            0.050995000000000006,
+            2.715226013085138,
+            74.994,
+            2.4995000000000003,
+            2.3160478607547494,
+            -0.7302313580096906,
+            3.2264974160385544,
+            3.4992002890587623,
+            3.7545332946063574,
+            4.075109760666108,
+            1.9881731895092023,
+            0.15123348472486808
+          ],
+          "nll": 385.2217705523963,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 103
+        },
+        {
+          "start": 4,
+          "x": [
+            6.236213120974811,
+            3.49972,
+            74.994,
+            -1.733375706063343,
+            -1.4181433136183155,
+            2.4995000000000003,
+            3.5795894926516327,
+            3.4646452944812345,
+            3.70439898611707,
+            4.221968688876588,
+            1.924046986187548,
+            0.14653971147687272
+          ],
+          "nll": 394.0433620774867,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 48
+        },
+        {
+          "start": 14,
+          "x": [
+            5.573997897133296,
+            3.49972,
+            20.608643750661166,
+            -1.2548537350938136,
+            1.0467034728674314,
+            0.11015726656339542,
+            3.5105987476189875,
+            3.89562700359508,
+            4.29984,
+            4.29984,
+            2.04995,
+            0.13689397196137154
+          ],
+          "nll": 446.4325771778818,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 98
+        },
+        {
+          "start": 5,
+          "x": [
+            5.717649115490461,
+            3.49972,
+            23.811725590379353,
+            2.4995000000000003,
+            -0.12724348001168773,
+            0.07377616011900745,
+            3.8215223137592735,
+            3.706826956089985,
+            3.932653709018849,
+            4.29984,
+            2.04995,
+            0.13579315327533237
+          ],
+          "nll": 476.8800851852807,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 100
+        }
+      ],
+      "inner_seconds": 10.610499875008827,
+      "validation": {
+        "rmse": 0.12040218065344067,
+        "correlation": 0.5199761107584938
+      },
+      "full_candidates": [
+        {
+          "start": 6,
+          "x": [
+            2.0396065860306116,
+            2.940392944771748,
+            74.994,
+            -1.0263858813761497,
+            0.4223504078020546,
+            -0.8921769153825774,
+            3.511418358881823,
+            3.7278054798732594,
+            4.145816531482954,
+            4.29984,
+            1.8084176593872339,
+            0.12695334356928645
+          ],
+          "nll": 198.29788883030716,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 62
+        },
+        {
+          "start": 0,
+          "x": [
+            2.447755639257904,
+            3.49972,
+            49.46149517745574,
+            0.01196157328978531,
+            0.3244242023859929,
+            -0.5309217830695359,
+            4.1278811018146495,
+            4.29984,
+            4.188510749003888,
+            4.29984,
+            1.740779623633923,
+            0.13292998408824352
+          ],
+          "nll": 220.8490110383701,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 28
+        },
+        {
+          "start": 2,
+          "x": [
+            2.428653601858788,
+            3.49972,
+            48.9902908557624,
+            -0.7564763228106801,
+            0.12720905554146578,
+            0.28140198312120646,
+            4.190734986834101,
+            4.09504323651623,
+            4.20919349031497,
+            4.29984,
+            1.7427963260880368,
+            0.12820376969856373
+          ],
+          "nll": 231.16471716174289,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 57
+        },
+        {
+          "start": 3,
+          "x": [
+            2.4077299250528177,
+            3.49972,
+            56.40904353609486,
+            0.43201238757911486,
+            -0.7093234938095339,
+            0.49727740652557406,
+            4.235673327724299,
+            4.109757394184714,
+            4.201106033521418,
+            4.291312316309676,
+            1.6249727220100767,
+            0.1150560234473238
+          ],
+          "nll": 241.52071625412077,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 54
+        },
+        {
+          "start": 13,
+          "x": [
+            2.2987379744993413,
+            3.4281165880623767,
+            59.41585542180894,
+            0.13519309829928883,
+            1.2400195584468827,
+            -0.6612629772507819,
+            4.102202690094327,
+            4.27642726198982,
+            4.290481076562433,
+            4.29984,
+            1.5801036938052255,
+            0.11369973416097201
+          ],
+          "nll": 254.79833432180124,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 67
+        },
+        {
+          "start": 9,
+          "x": [
+            2.402268645594866,
+            3.490087959309628,
+            66.5154488641162,
+            0.4805841697352591,
+            0.7583512427124499,
+            -0.47435399649966925,
+            3.924385171784464,
+            3.9873401466469214,
+            4.29984,
+            4.29984,
+            1.8486561544064308,
+            0.12594533391738083
+          ],
+          "nll": 283.2515146120299,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 81
+        },
+        {
+          "start": 12,
+          "x": [
+            9.963273623365355,
+            3.49972,
+            74.994,
+            -2.2690029615469687,
+            -2.4995,
+            -0.4667048214991514,
+            3.3715967630596833,
+            3.5264716710068513,
+            3.666641436238194,
+            4.245001237433186,
+            1.7997093772959516,
+            0.14896366567011998
+          ],
+          "nll": 285.7438289964843,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 59
+        },
+        {
+          "start": 1,
+          "x": [
+            2.4563672339484968,
+            3.49972,
+            32.22154639245004,
+            -1.139779915434436,
+            -0.7811212520986968,
+            0.5309354256200365,
+            4.069608373329469,
+            4.236105504919713,
+            4.075230246634664,
+            4.29984,
+            1.8548285407811118,
+            0.11750801662575505
+          ],
+          "nll": 296.74430961842984,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 62
+        },
+        {
+          "start": 4,
+          "x": [
+            6.17519027049322,
+            3.49972,
+            73.85403923671618,
+            -0.9822838754178156,
+            2.2839513149310164,
+            2.0384895899182123,
+            3.568934428109019,
+            3.581459933412561,
+            4.067327242078964,
+            4.241864085452368,
+            1.795556313233219,
+            0.1486770772197491
+          ],
+          "nll": 297.22590906132996,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 98
+        },
+        {
+          "start": 15,
+          "x": [
+            6.386395979474322,
+            3.49972,
+            45.25314397521153,
+            2.4910681859234085,
+            1.7314182276542276,
+            2.4995000000000003,
+            3.73351250648777,
+            3.6156742672624795,
+            4.006249551455021,
+            4.29984,
+            1.8133785940693372,
+            0.14571010508023907
+          ],
+          "nll": 316.20067704971046,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 95
+        },
+        {
+          "start": 10,
+          "x": [
+            0.050995000000000006,
+            2.823422128300969,
+            74.994,
+            2.4995000000000003,
+            2.404659607713768,
+            -0.6206580318337278,
+            3.3236905270717125,
+            3.680978674959892,
+            3.862378148847416,
+            4.134456553082346,
+            2.04995,
+            0.15381587163858768
+          ],
+          "nll": 325.4362253320722,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 95
+        },
+        {
+          "start": 7,
+          "x": [
+            1.6000627866235506,
+            3.49972,
+            35.5698320392999,
+            0.2796897479805569,
+            -0.028809203910501235,
+            1.736837574452296,
+            3.815143122173494,
+            4.29984,
+            3.9815984067539114,
+            4.29984,
+            1.8660739826515453,
+            0.12241984126271199
+          ],
+          "nll": 325.9748487520575,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 58
+        },
+        {
+          "start": 5,
+          "x": [
+            6.213512375182997,
+            3.49972,
+            18.83569542627507,
+            -1.5314974680269975,
+            -0.13930673316065434,
+            -1.908350691211378,
+            3.647574204870517,
+            4.014506128006881,
+            3.769255101711642,
+            4.29984,
+            1.95673217380875,
+            0.14183324374162676
+          ],
+          "nll": 401.0194065357026,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 153
+        },
+        {
+          "start": 11,
+          "x": [
+            9.999005,
+            3.49972,
+            28.929210729120488,
+            -2.2356741869359853,
+            -0.8820249679451213,
+            -0.514410426929885,
+            3.2150607421311883,
+            3.4493692865303798,
+            3.7867299646348997,
+            4.29984,
+            1.8765563628225588,
+            0.1383972816494854
+          ],
+          "nll": 415.65358497084725,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 55
+        },
+        {
+          "start": 8,
+          "x": [
+            6.215013884878773,
+            3.49972,
+            48.38727311937466,
+            0.5604171718148239,
+            1.14075723815388,
+            -0.5638714073592255,
+            3.6251164672946237,
+            3.8237693807071857,
+            4.072746179962414,
+            4.289983026853397,
+            1.7085758486452678,
+            0.13570347255412263
+          ],
+          "nll": 427.94275923647973,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 60
+        },
+        {
+          "start": 14,
+          "x": [
+            6.232713830144349,
+            3.49972,
+            21.050718902885173,
+            -0.7054294442604454,
+            1.3309908727142599,
+            -0.26908892337191315,
+            3.6635845288104174,
+            4.076327336071664,
+            4.29984,
+            4.29984,
+            1.6218278749596742,
+            0.1317846388684063
+          ],
+          "nll": 441.44525624037055,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 108
+        }
+      ],
+      "full_seconds": 11.648321457993006,
+      "selected": false,
+      "train": {
+        "rmse": 0.06868407840634365,
+        "correlation": 0.7160292894101967
+      },
+      "test": {
+        "rmse": 0.06439810061103976,
+        "correlation": 0.6378275436519404
+      }
+    },
+    {
+      "model": "flex5",
+      "covariance": "diagonal",
+      "key": "flex5_diagonal",
+      "names": [
+        "hs",
+        "Vs_s",
+        "H",
+        "crust_thickness_logratio_1",
+        "crust_thickness_logratio_2",
+        "crust_thickness_logratio_3",
+        "Vs_c1",
+        "Vs_c2",
+        "Vs_c3",
+        "Vs_c4",
+        "kappa",
+        "P_time_shift_s"
+      ],
+      "bounds": [
+        [
+          0.05,
+          0.7,
+          15.0,
+          -2.5,
+          -2.5,
+          -2.5,
+          2.7,
+          2.7,
+          2.7,
+          2.7,
+          1.55,
+          -0.6
+        ],
+        [
+          10.0,
+          3.5,
+          75.0,
+          2.5,
+          2.5,
+          2.5,
+          4.3,
+          4.3,
+          4.3,
+          4.3,
+          2.05,
+          0.6
+        ]
+      ],
+      "smooth": 1.0,
+      "fit_window_s": [
+        -0.6,
+        26.0
+      ],
+      "inner_candidates": [
+        {
+          "start": 2,
+          "x": [
+            2.1003078500180226,
+            2.957218358633903,
+            47.27028822396468,
+            0.012380668602384848,
+            0.1012804381804191,
+            -0.26546323861719134,
+            3.8536685651539706,
+            4.157409971006101,
+            4.063154479195292,
+            4.250958170589608,
+            1.7506903194338543,
+            0.11725274558104704
+          ],
+          "nll": 67.1950944321521,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 80
+        },
+        {
+          "start": 0,
+          "x": [
+            2.1002828182559985,
+            2.957187347836027,
+            47.270322380508496,
+            0.012375123751242167,
+            0.10127246778329946,
+            -0.26544644423697594,
+            3.8536584591700387,
+            4.157411526037703,
+            4.063157370461813,
+            4.250967831771848,
+            1.750693452345702,
+            0.11724832926687245
+          ],
+          "nll": 67.19509451014036,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 79
+        },
+        {
+          "start": 6,
+          "x": [
+            1.9657260873012807,
+            2.7908513249735547,
+            74.994,
+            -0.5985684034949235,
+            0.7272916660572064,
+            -0.062388851816792545,
+            3.5517457808992985,
+            3.780984416188876,
+            4.29984,
+            4.29984,
+            1.8087945479931995,
+            0.1266115747312333
+          ],
+          "nll": 69.52801004373292,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 123
+        },
+        {
+          "start": 3,
+          "x": [
+            1.9484981575919387,
+            2.784904761443677,
+            54.97735483445558,
+            0.04402614539267358,
+            0.23194895858747788,
+            0.7000030368219883,
+            3.705102536268459,
+            3.96454662523261,
+            3.842535632138237,
+            4.29984,
+            1.7731941928349861,
+            0.10615162763097463
+          ],
+          "nll": 71.52644639228623,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 77
+        },
+        {
+          "start": 5,
+          "x": [
+            2.054163189005437,
+            2.9468101775710087,
+            51.77937190443533,
+            1.1711984890415374,
+            -0.5191658881863268,
+            -1.951034923678589,
+            3.5161516452957993,
+            3.643761492044023,
+            3.7819965136868476,
+            4.29984,
+            1.7929997530902402,
+            0.13708754124718558
+          ],
+          "nll": 74.96615465179215,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 60
+        },
+        {
+          "start": 14,
+          "x": [
+            2.328553340919972,
+            3.2605532530002987,
+            15.645484474582565,
+            0.5427890860750226,
+            -0.37351893802566094,
+            -0.8848836303253316,
+            4.29984,
+            4.252682179343896,
+            4.160244364595261,
+            4.29984,
+            1.8197339929811132,
+            0.11934596230031735
+          ],
+          "nll": 79.6884544776182,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 159
+        },
+        {
+          "start": 8,
+          "x": [
+            2.0774514939429287,
+            2.979501899891405,
+            65.82248118561961,
+            0.5688353945081208,
+            -1.3914962998978362,
+            -0.0967945137398667,
+            3.6531938626306246,
+            3.7140851006489655,
+            3.7644347113159404,
+            4.29984,
+            1.6091964663636678,
+            0.13646115617814814
+          ],
+          "nll": 84.07314423440575,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 52
+        },
+        {
+          "start": 13,
+          "x": [
+            2.1840157716451403,
+            3.066408270272283,
+            72.82252091873099,
+            1.9623549239445364,
+            -0.529733688575154,
+            -0.5294083036377861,
+            3.7467117782348716,
+            4.29984,
+            4.29984,
+            4.29984,
+            1.6173064940254787,
+            0.1346395312741686
+          ],
+          "nll": 88.2974728863444,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 63
+        },
+        {
+          "start": 11,
+          "x": [
+            6.9784413139357335,
+            3.49972,
+            42.800115641513486,
+            -0.7096649305077771,
+            -1.540335875427117,
+            0.3623520509381386,
+            3.5935940328573603,
+            3.6758525421793484,
+            3.558446232995091,
+            4.058363390988194,
+            1.7702835548659879,
+            0.170854793935876
+          ],
+          "nll": 92.50546265691506,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 83
+        },
+        {
+          "start": 7,
+          "x": [
+            2.600058668169578,
+            3.49972,
+            41.3763425658258,
+            -1.218350164328642,
+            -0.885100964258378,
+            0.8183513404717924,
+            4.170583046099953,
+            4.29848541434939,
+            4.021618833899941,
+            4.239108590169796,
+            2.0043000703373166,
+            0.1300684350158271
+          ],
+          "nll": 92.71677130106447,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 70
+        },
+        {
+          "start": 15,
+          "x": [
+            6.497852935328602,
+            3.49972,
+            43.68505932479907,
+            1.1235143409549564,
+            -0.6326572337493142,
+            0.3988432358254861,
+            3.679687934618371,
+            3.4604796477487643,
+            3.9168077067277576,
+            4.18010373860174,
+            1.8229683928394411,
+            0.16736682745834253
+          ],
+          "nll": 97.31105117809274,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 84
+        },
+        {
+          "start": 12,
+          "x": [
+            2.383227525930712,
+            3.259838416228332,
+            68.08670103109813,
+            -1.9331705016751708,
+            -1.4857582501813016,
+            1.9439224642740145,
+            3.9588687573615635,
+            4.078456445339829,
+            3.918578642780011,
+            4.29984,
+            1.5500500000000001,
+            0.12795114727314194
+          ],
+          "nll": 97.85664006910554,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 70
+        },
+        {
+          "start": 9,
+          "x": [
+            0.050995000000000006,
+            2.884111819157699,
+            52.36645727260836,
+            0.7705449757078049,
+            -0.2683428516329074,
+            0.020599617752500965,
+            3.8249472372301936,
+            3.711865974473459,
+            3.7962744845606076,
+            4.059774667971403,
+            1.619307244907712,
+            0.18620004228327613
+          ],
+          "nll": 99.60275218922804,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 79
+        },
+        {
+          "start": 1,
+          "x": [
+            2.4350714887483678,
+            3.304495140573766,
+            32.27153947830853,
+            -1.3739994256482135,
+            0.44310473082607116,
+            0.6038866025127207,
+            4.166436508017908,
+            3.943870676379304,
+            4.29984,
+            4.29984,
+            1.8962670447660803,
+            0.12266821271875261
+          ],
+          "nll": 115.77633193372549,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 96
+        },
+        {
+          "start": 4,
+          "x": [
+            9.999005,
+            3.2414547202939072,
+            59.268323485600604,
+            -0.9694525437145254,
+            -0.5264030152863817,
+            1.4546279107474684,
+            3.4420433754645177,
+            3.246475563888534,
+            3.4119523046438376,
+            4.139560343591776,
+            1.5500500000000001,
+            0.1565852066596226
+          ],
+          "nll": 134.90327336361432,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 46
+        },
+        {
+          "start": 10,
+          "x": [
+            0.050995000000000006,
+            2.620679041960165,
+            74.994,
+            1.8937464605721228,
+            1.7644416744441305,
+            -0.6188977406625094,
+            2.8432710494790987,
+            3.112381687181274,
+            3.3762615621042933,
+            3.7074416970520705,
+            2.04995,
+            0.1550086087746454
+          ],
+          "nll": 151.24135256405404,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 109
+        }
+      ],
+      "inner_seconds": 12.86535708300653,
+      "validation": {
+        "rmse": 0.11641587979423511,
+        "correlation": 0.5588258177087198
+      },
+      "full_candidates": [
+        {
+          "start": 2,
+          "x": [
+            2.3449370506665224,
+            3.1125874772581126,
+            47.18349499344961,
+            -0.5048801896084656,
+            -1.5401232634753783,
+            0.638026760924931,
+            4.016214152896252,
+            3.717985070515641,
+            4.0335609288494165,
+            4.29984,
+            1.7579601449749371,
+            0.12637660355982594
+          ],
+          "nll": 68.54258165997332,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 62
+        },
+        {
+          "start": 0,
+          "x": [
+            1.9891367968196545,
+            2.8501317580963166,
+            48.06977593070547,
+            -0.004645383972829098,
+            0.09352282066911499,
+            -0.2714700116475375,
+            3.9024922070019006,
+            4.2228515083405735,
+            4.1401753510567785,
+            4.298983060528844,
+            1.7528285486668291,
+            0.10811083671825505
+          ],
+          "nll": 72.56140152512444,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 37
+        },
+        {
+          "start": 13,
+          "x": [
+            2.056679460268928,
+            2.9921662504189577,
+            74.994,
+            1.3431668366354272,
+            -0.3407944044942224,
+            -0.4017983455275749,
+            3.683608946580997,
+            4.224415077343587,
+            4.29984,
+            4.29984,
+            1.7883433254698728,
+            0.13967448332878074
+          ],
+          "nll": 76.07258197778492,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 77
+        },
+        {
+          "start": 12,
+          "x": [
+            1.3006214561930358,
+            2.194859765692771,
+            71.6933323904718,
+            0.2183402914244894,
+            -0.6145575304437079,
+            1.936552331850919,
+            3.5548707168838996,
+            4.182926447649657,
+            4.100270282956514,
+            4.2832849236663355,
+            1.5500500000000001,
+            0.07443906569031988
+          ],
+          "nll": 77.61917071045897,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 100
+        },
+        {
+          "start": 5,
+          "x": [
+            2.3743390533820388,
+            3.382706130631547,
+            48.503969350525715,
+            1.3053522247939693,
+            -1.0715812835041085,
+            -0.030009263544991338,
+            4.179109497872683,
+            4.00225207192505,
+            4.088981876619799,
+            4.207568993050915,
+            1.759720530028901,
+            0.13218226685373913
+          ],
+          "nll": 80.73550950577949,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 81
+        },
+        {
+          "start": 3,
+          "x": [
+            1.8258663337124568,
+            2.742722391979803,
+            56.023177941920515,
+            -0.01704638906742595,
+            0.13032348683953376,
+            0.501644299120211,
+            3.871475736643336,
+            4.199307116236829,
+            4.1486408795786325,
+            4.29984,
+            1.6206877687301782,
+            0.09795226983755745
+          ],
+          "nll": 82.2568613834752,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 75
+        },
+        {
+          "start": 8,
+          "x": [
+            2.242829636247386,
+            3.2037664102689796,
+            54.190163166540636,
+            1.0639704734125646,
+            -0.8753505860038846,
+            -0.8427377416635728,
+            3.9387864680472875,
+            3.987960084193794,
+            3.9937964818991043,
+            4.177356528844642,
+            1.61438039359594,
+            0.1329754058863426
+          ],
+          "nll": 89.82887166542672,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 80
+        },
+        {
+          "start": 1,
+          "x": [
+            2.57488819554221,
+            3.294656591758975,
+            40.560206656355376,
+            -0.4035336194207906,
+            -1.2589812170137111,
+            0.29318087051543884,
+            4.1137083883904415,
+            3.833809316307605,
+            4.148083138547021,
+            4.29984,
+            1.9953950319925584,
+            0.12706276745040346
+          ],
+          "nll": 90.31046547558822,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 88
+        },
+        {
+          "start": 11,
+          "x": [
+            6.910903674406213,
+            3.49972,
+            42.20141252592695,
+            -1.552922044415197,
+            -0.6444078416413515,
+            0.30575127478666486,
+            3.7322601071259998,
+            3.5357729971069887,
+            3.4663440969798907,
+            4.0610343328724605,
+            1.7738192437483298,
+            0.1661198206929908
+          ],
+          "nll": 96.0985064177178,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 74
+        },
+        {
+          "start": 7,
+          "x": [
+            2.6304863659790376,
+            3.49972,
+            40.497421973994044,
+            -1.0585993897303994,
+            -0.8074378541857608,
+            0.9826631968840092,
+            4.1161639794401275,
+            4.29984,
+            4.0500061305184545,
+            4.273948033036752,
+            1.9831053498146365,
+            0.13393746469740975
+          ],
+          "nll": 96.29731437290998,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 63
+        },
+        {
+          "start": 14,
+          "x": [
+            5.373977253280232,
+            3.49972,
+            44.353514508982556,
+            -2.4995,
+            -0.1479243886450754,
+            0.4363281931899907,
+            3.633513977907428,
+            3.9410944065950773,
+            3.6877759194683657,
+            4.07478035627789,
+            1.7663917515219518,
+            0.16383590566597583
+          ],
+          "nll": 99.3028875671764,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 56
+        },
+        {
+          "start": 15,
+          "x": [
+            7.223352392871836,
+            3.49972,
+            50.641676982867345,
+            0.943965959682588,
+            -0.4880042883873821,
+            -1.6944099796264906,
+            3.3890810987197204,
+            3.6364801113800973,
+            3.782768174401994,
+            4.29984,
+            1.7969992512451927,
+            0.17821572154118248
+          ],
+          "nll": 103.44053895764058,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 59
+        },
+        {
+          "start": 9,
+          "x": [
+            0.050995000000000006,
+            2.6874298174845928,
+            70.45641731000768,
+            -1.1876151601966138,
+            0.9660497181146894,
+            -0.04253928512734584,
+            3.4054083692983736,
+            3.6859387355811433,
+            3.8891615979339456,
+            4.29984,
+            1.5500500000000001,
+            0.17351775144069181
+          ],
+          "nll": 109.28310897958437,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 85
+        },
+        {
+          "start": 4,
+          "x": [
+            9.999005,
+            3.0600679056729954,
+            58.90201233826662,
+            -0.81259582688864,
+            -0.4045494452959302,
+            0.7592115629486917,
+            3.186385305004869,
+            3.295420317821631,
+            3.552712846311926,
+            4.056199874084319,
+            1.5500500000000001,
+            0.16026495698691845
+          ],
+          "nll": 137.8083345271725,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 54
+        },
+        {
+          "start": 6,
+          "x": [
+            9.999005,
+            3.49972,
+            70.45025825853256,
+            -1.145243303099395,
+            -0.8505158303324087,
+            0.39342158151744755,
+            3.162629216134534,
+            3.5093999033958365,
+            3.8279705771313037,
+            4.018165981509203,
+            2.0389294068184975,
+            0.16646813890247458
+          ],
+          "nll": 162.1478332824667,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 52
+        },
+        {
+          "start": 10,
+          "x": [
+            0.050995000000000006,
+            2.5012795016400773,
+            74.994,
+            1.7541989859168012,
+            1.537480189850572,
+            -0.36135725449264333,
+            2.871322613007569,
+            3.1201750557889105,
+            3.380800435553198,
+            3.7998656037877048,
+            2.04995,
+            0.14900578734229775
+          ],
+          "nll": 165.07275816005438,
+          "success": true,
+          "message": "CONVERGENCE: REL_REDUCTION_OF_F_<=_FACTR*EPSMCH",
+          "iterations": 96
+        }
+      ],
+      "full_seconds": 10.887403875007294,
+      "selected": false,
+      "train": {
+        "rmse": 0.061602151625856236,
+        "correlation": 0.7557905725953892
+      },
+      "test": {
+        "rmse": 0.06319725880189053,
+        "correlation": 0.6590319101574565
+      }
+    }
+  ],
+  "split": {
+    "inner_fit": [
+      "Ears/gauss_2.5/TA.W25A/2008_201_02_39_28.itr",
+      "Ears/gauss_2.5/TA.W25A/2008_205_15_26_19.itr",
+      "Ears/gauss_2.5/TA.W25A/2008_252_18_52_06.itr",
+      "Ears/gauss_2.5/TA.W25A/2008_273_15_19_31.itr",
+      "Ears/gauss_2.5/TA.W25A/2009_078_18_17_40.itr",
+      "Ears/gauss_2.5/TA.W25A/2009_157_05_52_43.itr",
+      "Ears/gauss_2.5/TA.W25A/2009_211_20_05_34.itr",
+      "Ears/gauss_2.5/TA.W25A/2009_275_01_07_39.itr",
+      "Ears/gauss_2.5/TA.W25A/2010_049_01_13_19.itr",
+      "Ears/gauss_2.5/TA.W25A/2008_187_02_12_04.itr",
+      "Ears/gauss_2.5/TA.W25A/2008_206_01_43_16.itr",
+      "Ears/gauss_2.5/TA.W25A/2008_255_00_20_50.itr",
+      "Ears/gauss_2.5/TA.W25A/2008_329_09_02_58.itr",
+      "Ears/gauss_2.5/TA.W25A/2009_193_06_12_47.itr",
+      "Ears/gauss_2.5/TA.W25A/2009_232_06_35_04.itr",
+      "Ears/gauss_2.5/TA.W25A/2009_260_23_21_38.itr",
+      "Ears/gauss_2.5/TA.W25A/2010_066_07_05_23.itr",
+      "Ears/gauss_2.5/TA.W25A/2010_075_02_21_57.itr",
+      "Ears/gauss_2.5/TA.W25A/2008_239_21_00_36.itr",
+      "Ears/gauss_2.5/TA.W25A/2008_285_10_40_14.itr",
+      "Ears/gauss_2.5/TA.W25A/2009_040_14_09_02.itr",
+      "Ears/gauss_2.5/TA.W25A/2009_071_23_23_34.itr",
+      "Ears/gauss_2.5/TA.W25A/2009_130_01_16_06.itr",
+      "Ears/gauss_2.5/TA.W25A/2009_136_18_22_25.itr",
+      "Ears/gauss_2.5/TA.W25A/2009_185_06_49_35.itr",
+      "Ears/gauss_2.5/TA.W25A/2009_286_05_37_23.itr"
+    ],
+    "inner_validation": [
+      "Ears/gauss_2.5/TA.W25A/2008_178_21_19_15.itr",
+      "Ears/gauss_2.5/TA.W25A/2008_293_05_10_33.itr",
+      "Ears/gauss_2.5/TA.W25A/2009_280_22_03_14.itr",
+      "Ears/gauss_2.5/TA.W25A/2008_150_15_46_00.itr",
+      "Ears/gauss_2.5/TA.W25A/2009_065_10_50_29.itr",
+      "Ears/gauss_2.5/TA.W25A/2010_070_14_39_43.itr",
+      "Ears/gauss_2.5/TA.W25A/2008_220_18_30_03.itr",
+      "Ears/gauss_2.5/TA.W25A/2009_074_03_14_31.itr",
+      "Ears/gauss_2.5/TA.W25A/2009_286_20_21_53.itr"
+    ],
+    "outer_test": [
+      "Ears/gauss_2.5/TA.W25A/2008_128_16_02_02.itr",
+      "Ears/gauss_2.5/TA.W25A/2008_232_16_30_13.itr",
+      "Ears/gauss_2.5/TA.W25A/2009_049_21_53_45.itr",
+      "Ears/gauss_2.5/TA.W25A/2009_221_10_55_55.itr",
+      "Ears/gauss_2.5/TA.W25A/2008_123_01_33_37.itr",
+      "Ears/gauss_2.5/TA.W25A/2008_254_13_08_14.itr",
+      "Ears/gauss_2.5/TA.W25A/2009_108_19_17_58.itr",
+      "Ears/gauss_2.5/TA.W25A/2009_272_17_48_10.itr",
+      "Ears/gauss_2.5/TA.W25A/2008_169_17_42_09.itr",
+      "Ears/gauss_2.5/TA.W25A/2009_008_19_21_35.itr",
+      "Ears/gauss_2.5/TA.W25A/2009_089_07_13_07.itr",
+      "Ears/gauss_2.5/TA.W25A/2009_225_09_37_35.itr"
+    ]
+  },
+  "score_window_s": [
+    0.8,
+    26.0
+  ],
+  "original_map_test": {
+    "rmse": 0.0739638478130111,
+    "correlation": 0.48045281878834956
+  },
+  "source_sha256": "bbbfce2f3f16b9f2d22bfe2a724d333b78ab8cd011bbae1f8f2e97b05e8237ac",
+  "script_sha256": "095326a626318499eab37e803f6dd1a03e7ce4dfc05584cbc1e2f1bfb6997859",
+  "scope": "MAP model assessment; outer events are unused by selection; no replacement posterior or geological truth claim"
+}

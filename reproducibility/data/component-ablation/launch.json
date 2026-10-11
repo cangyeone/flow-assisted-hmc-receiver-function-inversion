@@ -1,0 +1,46 @@
+[
+  {
+    "pid": 3213,
+    "device": "cuda:0",
+    "cases": [
+      0,
+      2,
+      4,
+      6
+    ],
+    "command": [
+      "env/bin/python",
+      "-u",
+      "scripts/component_ablation.py",
+      "--device",
+      "cuda:0",
+      "--cases",
+      "0",
+      "2",
+      "4",
+      "6"
+    ]
+  },
+  {
+    "pid": 3214,
+    "device": "cuda:1",
+    "cases": [
+      1,
+      3,
+      5,
+      7
+    ],
+    "command": [
+      "env/bin/python",
+      "-u",
+      "scripts/component_ablation.py",
+      "--device",
+      "cuda:1",
+      "--cases",
+      "1",
+      "3",
+      "5",
+      "7"
+    ]
+  }
+]

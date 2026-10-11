@@ -1,0 +1,34 @@
+{
+  "created_utc": "2026-10-09T10:24:06.824501+00:00",
+  "seed": 728,
+  "starts": 16,
+  "maxiter": 300,
+  "development_stations": [
+    "U23A",
+    "X26A",
+    "W19A",
+    "Z19A",
+    "Z20A"
+  ],
+  "model_candidates": [
+    "legacy",
+    "timing",
+    "layer3",
+    "layer5",
+    "flex5"
+  ],
+  "likelihood_candidates": [
+    "full fixed covariance",
+    "diagonal composite with power 0.2"
+  ],
+  "complexity_selection": "inner validation RMSE; lower dimension within 2% of minimum",
+  "inner_split": "every fifth training event within its original slowness bin",
+  "score_window_s": [
+    0.8,
+    26.0
+  ],
+  "outer_split": "unchanged from original manifest",
+  "inner_initialization": "Sobol plus fixed reference model [1.5,2.4,40,1.78]; no parameters learned from inner validation",
+  "note": "Five stations with inspected exploratory output are excluded from primary post-refinement validation statistics; all 42 are shown. Model/likelihood selection is not uncertainty calibration.",
+  "script_sha256": "095326a626318499eab37e803f6dd1a03e7ce4dfc05584cbc1e2f1bfb6997859"
+}

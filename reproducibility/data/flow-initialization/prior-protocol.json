@@ -1,0 +1,11 @@
+{
+  "flow_baseline": "results/external-mcmc-accuracy-v5",
+  "flow_protocol_sha256": "6d1143bd70d5a89d2c13f93b58d4071e4aca7c74eca77f09447aa5c92551b64b",
+  "target_source_sha256": "3c7865c59455d5259d4cffa8450c39f4ce581d61a334fa4403849361dd5991d8",
+  "sampling_kernel_sha256": "f05a93c974042ff2bcaf6d5797664b9dbd9ec609f4b6954b3986613a1382bce8",
+  "scope": "Known two finite layers, 4 unknowns, RF-only; two fixed truths with four noise repeats each",
+  "change": "Replace learned valid candidates by the same number of valid uniform-prior candidates; same 16384 raw broad-prior pool; pure prior uses global top64, flow baseline 32 learned+32 prior",
+  "matched": "Valid candidate scoring count; 64 independent optimizations max600 iterations; mode filter best-20; .3 local SD perturbation; 8 chains, 6000/1500 steps, mean16 leaps, target .95, frozen metric, same HMC/MWG seeds",
+  "limitation": "Workflow comparison: ranking/allocation policy differs naturally, so not a sole-factor causal ablation; actual optimizer calls vary; flow baseline reused and test data reused",
+  "source_sha256": "1867ff358307f26fc0e1d27b04ce272826874881e1859a0824c260b60cf1c94c"
+}

@@ -1,0 +1,209 @@
+{
+  "all": {
+    "stations": 42,
+    "improved": 41,
+    "worsened": 1,
+    "subwindows": {
+      "early_2_10": {
+        "improved": 37,
+        "median_old_rmse": 0.12154373266058631,
+        "median_new_rmse": 0.09653271179693552,
+        "paired_median_reduction_pct": 14.897452410688212
+      },
+      "late_10_26": {
+        "improved": 32,
+        "median_old_rmse": 0.09286001639296354,
+        "median_new_rmse": 0.08220797575492346,
+        "paired_median_reduction_pct": 11.158167026951505
+      }
+    },
+    "median_old_rmse": 0.11136617506560181,
+    "median_new_rmse": 0.08958670787984493,
+    "ratio_of_median_reduction_pct": 19.55662675217801,
+    "paired_median_reduction_pct": 14.653206198361545,
+    "paired_mean_reduction_pct": 17.25897061086555,
+    "min_reduction_pct": -2.177760017772856,
+    "max_reduction_pct": 33.85767277450782,
+    "median_old_correlation": 0.40694457605965006,
+    "median_new_correlation": 0.6639785909164188,
+    "selections": {
+      "flex5_diagonal": 8,
+      "layer5_diagonal": 21,
+      "layer3_diagonal": 10,
+      "flex5_full": 1,
+      "layer5_full": 1,
+      "timing_diagonal": 1
+    }
+  },
+  "primary_non_development": {
+    "stations": 37,
+    "improved": 36,
+    "worsened": 1,
+    "subwindows": {
+      "early_2_10": {
+        "improved": 32,
+        "median_old_rmse": 0.11044152096550301,
+        "median_new_rmse": 0.09252932421644816,
+        "paired_median_reduction_pct": 14.642381627182443
+      },
+      "late_10_26": {
+        "improved": 29,
+        "median_old_rmse": 0.08660807291140286,
+        "median_new_rmse": 0.08021950265485744,
+        "paired_median_reduction_pct": 11.490599793112576
+      }
+    },
+    "median_old_rmse": 0.10910247879610993,
+    "median_new_rmse": 0.08501594398909582,
+    "ratio_of_median_reduction_pct": 22.076982184819915,
+    "paired_median_reduction_pct": 14.721083811880497,
+    "paired_mean_reduction_pct": 17.429903693782872,
+    "min_reduction_pct": -2.177760017772856,
+    "max_reduction_pct": 33.85767277450782,
+    "median_old_correlation": 0.38097458937194734,
+    "median_new_correlation": 0.6381929125515062,
+    "selections": {
+      "layer5_diagonal": 21,
+      "layer3_diagonal": 10,
+      "flex5_diagonal": 3,
+      "flex5_full": 1,
+      "layer5_full": 1,
+      "timing_diagonal": 1
+    }
+  },
+  "development_stations": [
+    "U23A",
+    "X26A",
+    "W19A",
+    "Z19A",
+    "Z20A"
+  ],
+  "scope": "training-selected MAP prediction; independent event RF fit, not velocity/Moho ground truth or an HMC accuracy advantage",
+  "map_best_optimizer_failures": [],
+  "stations_with_selected_map_near_bound": [
+    "Z19A",
+    "Z20A",
+    "Z22A",
+    "Z24A",
+    "Z27A",
+    "X19A",
+    "X20A",
+    "X21A",
+    "X24A",
+    "X25A",
+    "X26A",
+    "W19A",
+    "V20A",
+    "V21A",
+    "W23A",
+    "W24A",
+    "W25A",
+    "V26A",
+    "U19A",
+    "U20A",
+    "U21A",
+    "U23A",
+    "U24A",
+    "U25A",
+    "U26A",
+    "S19A",
+    "S20A",
+    "S21A",
+    "S22A",
+    "S24A",
+    "S25A",
+    "S26A",
+    "R19A",
+    "R20A",
+    "R21A",
+    "R22A",
+    "R23A",
+    "R25A",
+    "R26A"
+  ],
+  "protocol": {
+    "created_utc": "2026-10-09T10:24:06.824501+00:00",
+    "seed": 728,
+    "starts": 16,
+    "maxiter": 300,
+    "development_stations": [
+      "U23A",
+      "X26A",
+      "W19A",
+      "Z19A",
+      "Z20A"
+    ],
+    "model_candidates": [
+      "legacy",
+      "timing",
+      "layer3",
+      "layer5",
+      "flex5"
+    ],
+    "likelihood_candidates": [
+      "full fixed covariance",
+      "diagonal composite with power 0.2"
+    ],
+    "complexity_selection": "inner validation RMSE; lower dimension within 2% of minimum",
+    "inner_split": "every fifth training event within its original slowness bin",
+    "score_window_s": [
+      0.8,
+      26.0
+    ],
+    "outer_split": "unchanged from original manifest",
+    "inner_initialization": "Sobol plus fixed reference model [1.5,2.4,40,1.78]; no parameters learned from inner validation",
+    "note": "Five stations with inspected exploratory output are excluded from primary post-refinement validation statistics; all 42 are shown. Model/likelihood selection is not uncertainty calibration.",
+    "script_sha256": "095326a626318499eab37e803f6dd1a03e7ce4dfc05584cbc1e2f1bfb6997859"
+  },
+  "source_results": "historical-results/fit-refinement-v3",
+  "representative_hmc": {
+    "U23A": {
+      "selected": "flex5_diagonal",
+      "status": "provisional_unconverged",
+      "max_rhat": 1.2040258651699172,
+      "min_bulk_ess": 14.42734167458427,
+      "min_tail_ess": 27.412399071038426,
+      "production_divergences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "old_posterior_test_rmse": 0.14536296653054273,
+      "new_posterior_test_rmse": 0.14075649796907483,
+      "relative_reduction_pct": 3.1689423182623466
+    },
+    "X26A": {
+      "selected": "flex5_diagonal",
+      "status": "provisional_unconverged",
+      "max_rhat": 1.630038702291028,
+      "min_bulk_ess": 6.534727569213867,
+      "min_tail_ess": 12.85721359103964,
+      "production_divergences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "old_posterior_test_rmse": 0.15362221911222268,
+      "new_posterior_test_rmse": 0.12952577255667433,
+      "relative_reduction_pct": 15.685521726479967
+    },
+    "W19A": {
+      "selected": "flex5_diagonal",
+      "status": "provisional_unconverged",
+      "max_rhat": 1.3244143383583387,
+      "min_bulk_ess": 9.732467421561179,
+      "min_tail_ess": 35.15949775060134,
+      "production_divergences": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "old_posterior_test_rmse": 0.3447330608575571,
+      "new_posterior_test_rmse": 0.2442142335211842,
+      "relative_reduction_pct": 29.158452945105562
+    }
+  }
+}

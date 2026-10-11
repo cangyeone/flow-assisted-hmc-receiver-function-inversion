@@ -1,0 +1,31 @@
+{
+  "created_utc": "2026-10-09T11:17:08.354701+00:00",
+  "starts": 16,
+  "maxiter": 400,
+  "seed": 1730,
+  "models": [
+    "sediment",
+    "gradient",
+    "damped"
+  ],
+  "basin_priors": "kappa_s N(2.1,.45),rho_s N(2.2,.25),log_Qs N(log60,1), endpoint velocity difference SD2; v3 crust/roughness/arrival priors retained",
+  "event_prediction": "Average individual normalized synthetic event RFs at actual fitting/validation/test ray parameters; nfft1024, refinement2048",
+  "selection": "Minimum dimension within 2% of best inner-validation RMSE; every fifth training event; unchanged outer events and 0.8-26 s score",
+  "real_scope": "All 42 stations assessed; previous outer results informed model development; continued exploratory predictive assessment",
+  "synthetic_cases": [
+    "shallow",
+    "deep"
+  ],
+  "noise": [
+    0.025,
+    0.06
+  ],
+  "seeds": [
+    200,
+    201,
+    202
+  ],
+  "target_sha256": "4db484ed597e7aa578af34ba9bf83ba88174e4e901c4916e31dcbef87963b6cf",
+  "script_sha256": "45758c7de067f2c1b8289f3556b1f32d1cba3903fbe2619032ad0596eb6ec89f",
+  "legacy_target_sha256": "095326a626318499eab37e803f6dd1a03e7ce4dfc05584cbc1e2f1bfb6997859"
+}

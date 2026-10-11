@@ -1,0 +1,36 @@
+{
+  "created_utc": "2026-10-11T11:55:03.803613+00:00",
+  "cases": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "initialization": [
+    "prior",
+    "flow"
+  ],
+  "kernels": [
+    "hmc",
+    "dram"
+  ],
+  "hmc": {
+    "steps": 6000,
+    "burn": 1500,
+    "leaps": 16,
+    "accept": 0.95
+  },
+  "dram": {
+    "steps": 30000,
+    "burn": 5000,
+    "adaptation": "warmup only"
+  },
+  "chains": 8,
+  "mode": "same saved initial states within each initialization arm; no MWG refresh",
+  "scope": "Exploratory component ablation on reused observations; unequal kernel-specific work budgets; independently implemented DRAM, original executable comparison remains separate",
+  "runner_sha256": "274fc34f6f6b3382219c42f0275e11e269513c921d45ef624591934a008ccf3a"
+}
