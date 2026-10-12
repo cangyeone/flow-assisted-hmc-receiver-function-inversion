@@ -92,6 +92,6 @@ This frozen example compares physical model families on held-out RFs. It does no
 
 ## License and citation
 
-Our FlowRF code and released model weights use [MIT](LICENSE). External GRTM retains its [research/noncommercial license](https://github.com/cangyeone/seismicx-grtm-community/blob/main/LICENSE); it is not relicensed by this repository. Observational and basin-map sources retain their own attribution; see [third-party notices](THIRD_PARTY_NOTICES.md). The complete physical stack therefore retains GRTM's research-use terms.
+Our original FlowRF code, documentation and released model weights use [GNU GPL version 3 only](LICENSE) (`GPL-3.0-only`); see [NOTICE](NOTICE). This applies from version 0.1.1. The previously published version 0.1.0 retains its MIT license. External GRTM retains its [research/noncommercial license](https://github.com/cangyeone/seismicx-grtm-community/blob/main/LICENSE); it is not relicensed by this repository. Observational and basin-map sources retain their own attribution; see [third-party notices](THIRD_PARTY_NOTICES.md). The complete physical stack therefore retains GRTM's research-use terms.
 
 Use [CITATION.cff](CITATION.cff) to cite this software, and cite the relevant RF, HMC, flow and comparison-method papers in [docs/references.md](docs/references.md). This software release does not imply that the manuscript has been accepted or independently validated.

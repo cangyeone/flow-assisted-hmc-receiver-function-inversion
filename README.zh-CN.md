@@ -56,4 +56,4 @@ print(result.summary["status"])
 
 [GRTM 社区](https://github.com/cangyeone/seismicx-grtm-community)是物理求解器；[DNN-RFQC 社区](https://github.com/cangyeone/dnn-rfqc-community)是可选的接收函数质量筛选工具，两者分开安装。仓库没有复制它们的实现。
 
-本项目自身代码与模型权重采用 [MIT](LICENSE)，外部 GRTM 保留其研究/非商业许可，观测数据与地图保留各自来源说明。完整物理依赖栈的使用仍受 GRTM 许可约束。软件引用见 [CITATION.cff](CITATION.cff)，算法和对比文章见 [references](docs/references.md)。
+本项目自身代码、文档与发布的模型权重从 v0.1.1 起采用 [GNU GPL 第 3 版](LICENSE)（仅第 3 版，`GPL-3.0-only`），版权和适用范围见 [NOTICE](NOTICE)。已经发布的 v0.1.0 保留原 MIT 许可。外部 GRTM 保留其研究/非商业许可，观测数据与地图保留各自来源说明。完整物理依赖栈的使用仍受 GRTM 许可约束。软件引用见 [CITATION.cff](CITATION.cff)，算法和对比文章见 [references](docs/references.md)。

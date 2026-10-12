@@ -2,7 +2,7 @@
 
 Only this project's own programs and trained model weights are published here. There is no `third_party/` or `vendor/` implementation tree, no author Bayesian/LITMOD program, no Fortran/C/C++/CUDA solver source, no third-party software archive and no GRTM implementation binary in this repository.
 
-External dependencies are installed through their own distributions and retain their licenses: NumPy/SciPy, PyTorch, Matplotlib, ObsPy, Requests, Packaging and PyShp. GRTM community retains its research/noncommercial license and associated binary notices. DNN-RFQC community is an optional separate GPL package; its code and model files are not copied here. This repository's MIT license does not change those terms.
+External dependencies are installed through their own distributions and retain their licenses: NumPy/SciPy, PyTorch, Matplotlib, ObsPy, Requests, Packaging and PyShp. GRTM community retains its research/noncommercial license and associated binary notices. DNN-RFQC community is an optional separate GPL package; its code and model files are not copied here. The GPL-3.0-only license for our original FlowRF code, documentation and released weights does not change those external terms. The published FlowRF v0.1.0 snapshot retains its original MIT license.
 
 Our archived DRAM implementation follows the cited algorithm independently. Result arrays from an externally run original method are research outputs, not a redistribution of that program. Comparison instructions cite papers and accept user-generated outputs; they do not fetch or package author code.
 

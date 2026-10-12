@@ -37,7 +37,7 @@ def main(argv=None):
     elif a.command=='doctor':
         import grtm
         backend();n=NeuralModels();n.load('forward');n.load('inverse')
-        print(json.dumps(dict(flowrf='0.1.0',grtm=grtm.__version__,torch=torch.__version__,device='cpu',models='SHA-256 and strict state-dict checks passed'),indent=2))
+        print(json.dumps(dict(flowrf='0.1.1',grtm=grtm.__version__,torch=torch.__version__,device='cpu',models='SHA-256 and strict state-dict checks passed'),indent=2))
     elif a.command=='models':
         from .neural.api import WEIGHTS
         print((WEIGHTS/'manifest.json').read_text())

@@ -18,7 +18,7 @@ def install_grtm():
         raise RuntimeError('GRTM differentiable RF preview currently supports macOS arm64/Python 3.12 and Linux x86_64/Python 3.13. Neural-only tools work on other platforms. See docs/installation.md.')
     name='seismicx_grtm-'+VERSION+'-'+tags[key]+'.whl'
     def get(url):
-        req=urllib.request.Request(url,headers={'User-Agent':'FlowRF/0.1.0'})
+        req=urllib.request.Request(url,headers={'User-Agent':'FlowRF/0.1.1'})
         with urllib.request.urlopen(req,timeout=120) as r:return r.read()
     # Pin hashes in our release, rather than trusting a second mutable download.
     hashes=json.loads((Path(__file__).parent/'weights'/'grtm-release.json').read_text())
